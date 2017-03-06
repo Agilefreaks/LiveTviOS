@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB99FEE31E6D95B1006BAA01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99FEE21E6D95B1006BAA01 /* AppDelegate.swift */; };
+		BB99FEE51E6D95B1006BAA01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99FEE41E6D95B1006BAA01 /* ViewController.swift */; };
+		BB99FEE81E6D95B1006BAA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEE61E6D95B1006BAA01 /* Main.storyboard */; };
+		BB99FEEA1E6D95B1006BAA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEE91E6D95B1006BAA01 /* Assets.xcassets */; };
+		BB99FEED1E6D95B1006BAA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEEB1E6D95B1006BAA01 /* LaunchScreen.storyboard */; };
+		BB99FEF81E6D95B1006BAA01 /* LiveTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99FEF71E6D95B1006BAA01 /* LiveTVTests.swift */; };
+		BB99FF031E6D95B2006BAA01 /* LiveTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99FF021E6D95B2006BAA01 /* LiveTVUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB99FEF41E6D95B1006BAA01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB99FED71E6D95B1006BAA01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB99FEDE1E6D95B1006BAA01;
+			remoteInfo = LiveTV;
+		};
+		BB99FEFF1E6D95B2006BAA01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB99FED71E6D95B1006BAA01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB99FEDE1E6D95B1006BAA01;
+			remoteInfo = LiveTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB99FEDF1E6D95B1006BAA01 /* LiveTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB99FEE21E6D95B1006BAA01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB99FEE41E6D95B1006BAA01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB99FEE71E6D95B1006BAA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB99FEE91E6D95B1006BAA01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB99FEEC1E6D95B1006BAA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB99FEEE1E6D95B1006BAA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB99FEF31E6D95B1006BAA01 /* LiveTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB99FEF71E6D95B1006BAA01 /* LiveTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTVTests.swift; sourceTree = "<group>"; };
+		BB99FEF91E6D95B2006BAA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB99FEFE1E6D95B2006BAA01 /* LiveTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB99FF021E6D95B2006BAA01 /* LiveTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTVUITests.swift; sourceTree = "<group>"; };
+		BB99FF041E6D95B2006BAA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB99FEDC1E6D95B1006BAA01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB99FEF01E6D95B1006BAA01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB99FEFB1E6D95B2006BAA01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB99FED61E6D95B1006BAA01 = {
+			isa = PBXGroup;
+			children = (
+				BB99FEE11E6D95B1006BAA01 /* LiveTV */,
+				BB99FEF61E6D95B1006BAA01 /* LiveTVTests */,
+				BB99FF011E6D95B2006BAA01 /* LiveTVUITests */,
+				BB99FEE01E6D95B1006BAA01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB99FEE01E6D95B1006BAA01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB99FEDF1E6D95B1006BAA01 /* LiveTV.app */,
+				BB99FEF31E6D95B1006BAA01 /* LiveTVTests.xctest */,
+				BB99FEFE1E6D95B2006BAA01 /* LiveTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB99FEE11E6D95B1006BAA01 /* LiveTV */ = {
+			isa = PBXGroup;
+			children = (
+				BB99FEE21E6D95B1006BAA01 /* AppDelegate.swift */,
+				BB99FEE41E6D95B1006BAA01 /* ViewController.swift */,
+				BB99FEE61E6D95B1006BAA01 /* Main.storyboard */,
+				BB99FEE91E6D95B1006BAA01 /* Assets.xcassets */,
+				BB99FEEB1E6D95B1006BAA01 /* LaunchScreen.storyboard */,
+				BB99FEEE1E6D95B1006BAA01 /* Info.plist */,
+			);
+			path = LiveTV;
+			sourceTree = "<group>";
+		};
+		BB99FEF61E6D95B1006BAA01 /* LiveTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB99FEF71E6D95B1006BAA01 /* LiveTVTests.swift */,
+				BB99FEF91E6D95B2006BAA01 /* Info.plist */,
+			);
+			path = LiveTVTests;
+			sourceTree = "<group>";
+		};
+		BB99FF011E6D95B2006BAA01 /* LiveTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB99FF021E6D95B2006BAA01 /* LiveTVUITests.swift */,
+				BB99FF041E6D95B2006BAA01 /* Info.plist */,
+			);
+			path = LiveTVUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB99FEDE1E6D95B1006BAA01 /* LiveTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB99FF071E6D95B2006BAA01 /* Build configuration list for PBXNativeTarget "LiveTV" */;
+			buildPhases = (
+				BB99FEDB1E6D95B1006BAA01 /* Sources */,
+				BB99FEDC1E6D95B1006BAA01 /* Frameworks */,
+				BB99FEDD1E6D95B1006BAA01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveTV;
+			productName = LiveTV;
+			productReference = BB99FEDF1E6D95B1006BAA01 /* LiveTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB99FEF21E6D95B1006BAA01 /* LiveTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB99FF0A1E6D95B2006BAA01 /* Build configuration list for PBXNativeTarget "LiveTVTests" */;
+			buildPhases = (
+				BB99FEEF1E6D95B1006BAA01 /* Sources */,
+				BB99FEF01E6D95B1006BAA01 /* Frameworks */,
+				BB99FEF11E6D95B1006BAA01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB99FEF51E6D95B1006BAA01 /* PBXTargetDependency */,
+			);
+			name = LiveTVTests;
+			productName = LiveTVTests;
+			productReference = BB99FEF31E6D95B1006BAA01 /* LiveTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB99FEFD1E6D95B2006BAA01 /* LiveTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB99FF0D1E6D95B2006BAA01 /* Build configuration list for PBXNativeTarget "LiveTVUITests" */;
+			buildPhases = (
+				BB99FEFA1E6D95B2006BAA01 /* Sources */,
+				BB99FEFB1E6D95B2006BAA01 /* Frameworks */,
+				BB99FEFC1E6D95B2006BAA01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB99FF001E6D95B2006BAA01 /* PBXTargetDependency */,
+			);
+			name = LiveTVUITests;
+			productName = LiveTVUITests;
+			productReference = BB99FEFE1E6D95B2006BAA01 /* LiveTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB99FED71E6D95B1006BAA01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = AgileFreaks;
+				TargetAttributes = {
+					BB99FEDE1E6D95B1006BAA01 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z54TRUH95M;
+						ProvisioningStyle = Automatic;
+					};
+					BB99FEF21E6D95B1006BAA01 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z54TRUH95M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB99FEDE1E6D95B1006BAA01;
+					};
+					BB99FEFD1E6D95B2006BAA01 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z54TRUH95M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB99FEDE1E6D95B1006BAA01;
+					};
+				};
+			};
+			buildConfigurationList = BB99FEDA1E6D95B1006BAA01 /* Build configuration list for PBXProject "LiveTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB99FED61E6D95B1006BAA01;
+			productRefGroup = BB99FEE01E6D95B1006BAA01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB99FEDE1E6D95B1006BAA01 /* LiveTV */,
+				BB99FEF21E6D95B1006BAA01 /* LiveTVTests */,
+				BB99FEFD1E6D95B2006BAA01 /* LiveTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB99FEDD1E6D95B1006BAA01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB99FEED1E6D95B1006BAA01 /* LaunchScreen.storyboard in Resources */,
+				BB99FEEA1E6D95B1006BAA01 /* Assets.xcassets in Resources */,
+				BB99FEE81E6D95B1006BAA01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB99FEF11E6D95B1006BAA01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB99FEFC1E6D95B2006BAA01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB99FEDB1E6D95B1006BAA01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB99FEE51E6D95B1006BAA01 /* ViewController.swift in Sources */,
+				BB99FEE31E6D95B1006BAA01 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB99FEEF1E6D95B1006BAA01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB99FEF81E6D95B1006BAA01 /* LiveTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB99FEFA1E6D95B2006BAA01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB99FF031E6D95B2006BAA01 /* LiveTVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB99FEF51E6D95B1006BAA01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB99FEDE1E6D95B1006BAA01 /* LiveTV */;
+			targetProxy = BB99FEF41E6D95B1006BAA01 /* PBXContainerItemProxy */;
+		};
+		BB99FF001E6D95B2006BAA01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB99FEDE1E6D95B1006BAA01 /* LiveTV */;
+			targetProxy = BB99FEFF1E6D95B2006BAA01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB99FEE61E6D95B1006BAA01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB99FEE71E6D95B1006BAA01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB99FEEB1E6D95B1006BAA01 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB99FEEC1E6D95B1006BAA01 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB99FF051E6D95B2006BAA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB99FF061E6D95B2006BAA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB99FF081E6D95B2006BAA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z54TRUH95M;
+				INFOPLIST_FILE = LiveTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.LiveTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BB99FF091E6D95B2006BAA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z54TRUH95M;
+				INFOPLIST_FILE = LiveTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.LiveTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BB99FF0B1E6D95B2006BAA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z54TRUH95M;
+				INFOPLIST_FILE = LiveTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.LiveTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveTV.app/LiveTV";
+			};
+			name = Debug;
+		};
+		BB99FF0C1E6D95B2006BAA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z54TRUH95M;
+				INFOPLIST_FILE = LiveTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.LiveTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveTV.app/LiveTV";
+			};
+			name = Release;
+		};
+		BB99FF0E1E6D95B2006BAA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Z54TRUH95M;
+				INFOPLIST_FILE = LiveTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.LiveTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LiveTV;
+			};
+			name = Debug;
+		};
+		BB99FF0F1E6D95B2006BAA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Z54TRUH95M;
+				INFOPLIST_FILE = LiveTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.LiveTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LiveTV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB99FEDA1E6D95B1006BAA01 /* Build configuration list for PBXProject "LiveTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB99FF051E6D95B2006BAA01 /* Debug */,
+				BB99FF061E6D95B2006BAA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB99FF071E6D95B2006BAA01 /* Build configuration list for PBXNativeTarget "LiveTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB99FF081E6D95B2006BAA01 /* Debug */,
+				BB99FF091E6D95B2006BAA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB99FF0A1E6D95B2006BAA01 /* Build configuration list for PBXNativeTarget "LiveTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB99FF0B1E6D95B2006BAA01 /* Debug */,
+				BB99FF0C1E6D95B2006BAA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB99FF0D1E6D95B2006BAA01 /* Build configuration list for PBXNativeTarget "LiveTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB99FF0E1E6D95B2006BAA01 /* Debug */,
+				BB99FF0F1E6D95B2006BAA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB99FED71E6D95B1006BAA01 /* Project object */;
+}
