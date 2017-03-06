@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB99FEE31E6D95B1006BAA01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99FEE21E6D95B1006BAA01 /* AppDelegate.swift */; };
-		BB99FEE51E6D95B1006BAA01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99FEE41E6D95B1006BAA01 /* ViewController.swift */; };
+		BB3DDE8F1E6D9BA800E2CDB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE8E1E6D9BA800E2CDB1 /* AppDelegate.swift */; };
+		BB3DDE971E6D9C2A00E2CDB1 /* LiveChannelsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE901E6D9C2A00E2CDB1 /* LiveChannelsConfigurator.swift */; };
+		BB3DDE981E6D9C2A00E2CDB1 /* LiveChannelsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE911E6D9C2A00E2CDB1 /* LiveChannelsInteractor.swift */; };
+		BB3DDE991E6D9C2A00E2CDB1 /* LiveChannelsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE921E6D9C2A00E2CDB1 /* LiveChannelsModels.swift */; };
+		BB3DDE9A1E6D9C2A00E2CDB1 /* LiveChannelsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE931E6D9C2A00E2CDB1 /* LiveChannelsPresenter.swift */; };
+		BB3DDE9B1E6D9C2A00E2CDB1 /* LiveChannelsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE941E6D9C2A00E2CDB1 /* LiveChannelsRouter.swift */; };
+		BB3DDE9C1E6D9C2A00E2CDB1 /* LiveChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE951E6D9C2A00E2CDB1 /* LiveChannelsViewController.swift */; };
+		BB3DDEA21E6DA39800E2CDB1 /* LiveChannelsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE9E1E6DA39800E2CDB1 /* LiveChannelsInteractorTests.swift */; };
+		BB3DDEA31E6DA39800E2CDB1 /* LiveChannelsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE9F1E6DA39800E2CDB1 /* LiveChannelsPresenterTests.swift */; };
+		BB3DDEA41E6DA39800E2CDB1 /* LiveChannelsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDEA01E6DA39800E2CDB1 /* LiveChannelsViewControllerTests.swift */; };
+		BB3DDEA81E6DA4F400E2CDB1 /* LiveChannelsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDEA71E6DA4F400E2CDB1 /* LiveChannelsService.swift */; };
+		BB3DDEAF1E6DB9FC00E2CDB1 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDEAE1E6DB9FC00E2CDB1 /* Injectable.swift */; };
 		BB99FEE81E6D95B1006BAA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEE61E6D95B1006BAA01 /* Main.storyboard */; };
 		BB99FEEA1E6D95B1006BAA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEE91E6D95B1006BAA01 /* Assets.xcassets */; };
 		BB99FEED1E6D95B1006BAA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEEB1E6D95B1006BAA01 /* LaunchScreen.storyboard */; };
@@ -34,9 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB3DDE8E1E6D9BA800E2CDB1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB3DDE901E6D9C2A00E2CDB1 /* LiveChannelsConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsConfigurator.swift; sourceTree = "<group>"; };
+		BB3DDE911E6D9C2A00E2CDB1 /* LiveChannelsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsInteractor.swift; sourceTree = "<group>"; };
+		BB3DDE921E6D9C2A00E2CDB1 /* LiveChannelsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsModels.swift; sourceTree = "<group>"; };
+		BB3DDE931E6D9C2A00E2CDB1 /* LiveChannelsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsPresenter.swift; sourceTree = "<group>"; };
+		BB3DDE941E6D9C2A00E2CDB1 /* LiveChannelsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsRouter.swift; sourceTree = "<group>"; };
+		BB3DDE951E6D9C2A00E2CDB1 /* LiveChannelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsViewController.swift; sourceTree = "<group>"; };
+		BB3DDE9E1E6DA39800E2CDB1 /* LiveChannelsInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsInteractorTests.swift; sourceTree = "<group>"; };
+		BB3DDE9F1E6DA39800E2CDB1 /* LiveChannelsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsPresenterTests.swift; sourceTree = "<group>"; };
+		BB3DDEA01E6DA39800E2CDB1 /* LiveChannelsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsViewControllerTests.swift; sourceTree = "<group>"; };
+		BB3DDEA71E6DA4F400E2CDB1 /* LiveChannelsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsService.swift; sourceTree = "<group>"; };
+		BB3DDEAE1E6DB9FC00E2CDB1 /* Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		BB99FEDF1E6D95B1006BAA01 /* LiveTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB99FEE21E6D95B1006BAA01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB99FEE41E6D95B1006BAA01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB99FEE71E6D95B1006BAA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB99FEE91E6D95B1006BAA01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB99FEEC1E6D95B1006BAA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +94,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB3DDE8B1E6D9B9600E2CDB1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BB3DDE8C1E6D9B9600E2CDB1 /* LiveChannelsList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BB3DDE8C1E6D9B9600E2CDB1 /* LiveChannelsList */ = {
+			isa = PBXGroup;
+			children = (
+				BB3DDE901E6D9C2A00E2CDB1 /* LiveChannelsConfigurator.swift */,
+				BB3DDE911E6D9C2A00E2CDB1 /* LiveChannelsInteractor.swift */,
+				BB3DDE921E6D9C2A00E2CDB1 /* LiveChannelsModels.swift */,
+				BB3DDE931E6D9C2A00E2CDB1 /* LiveChannelsPresenter.swift */,
+				BB3DDE941E6D9C2A00E2CDB1 /* LiveChannelsRouter.swift */,
+				BB3DDE951E6D9C2A00E2CDB1 /* LiveChannelsViewController.swift */,
+				BB3DDEA71E6DA4F400E2CDB1 /* LiveChannelsService.swift */,
+			);
+			path = LiveChannelsList;
+			sourceTree = "<group>";
+		};
+		BB3DDE8D1E6D9BA800E2CDB1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BB3DDE8E1E6D9BA800E2CDB1 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BB3DDEA61E6DA39C00E2CDB1 /* LiveChannelsList */ = {
+			isa = PBXGroup;
+			children = (
+				BB3DDE9E1E6DA39800E2CDB1 /* LiveChannelsInteractorTests.swift */,
+				BB3DDE9F1E6DA39800E2CDB1 /* LiveChannelsPresenterTests.swift */,
+				BB3DDEA01E6DA39800E2CDB1 /* LiveChannelsViewControllerTests.swift */,
+			);
+			name = LiveChannelsList;
+			sourceTree = "<group>";
+		};
+		BB3DDEAC1E6DB9D200E2CDB1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BB3DDEAD1E6DB9D200E2CDB1 /* Protocols */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BB3DDEAD1E6DB9D200E2CDB1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BB3DDEAE1E6DB9FC00E2CDB1 /* Injectable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		BB99FED61E6D95B1006BAA01 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +173,9 @@
 		BB99FEE11E6D95B1006BAA01 /* LiveTV */ = {
 			isa = PBXGroup;
 			children = (
-				BB99FEE21E6D95B1006BAA01 /* AppDelegate.swift */,
-				BB99FEE41E6D95B1006BAA01 /* ViewController.swift */,
+				BB3DDE8D1E6D9BA800E2CDB1 /* AppDelegate */,
+				BB3DDE8B1E6D9B9600E2CDB1 /* Scenes */,
+				BB3DDEAC1E6DB9D200E2CDB1 /* Utils */,
 				BB99FEE61E6D95B1006BAA01 /* Main.storyboard */,
 				BB99FEE91E6D95B1006BAA01 /* Assets.xcassets */,
 				BB99FEEB1E6D95B1006BAA01 /* LaunchScreen.storyboard */,
@@ -110,6 +187,7 @@
 		BB99FEF61E6D95B1006BAA01 /* LiveTVTests */ = {
 			isa = PBXGroup;
 			children = (
+				BB3DDEA61E6DA39C00E2CDB1 /* LiveChannelsList */,
 				BB99FEF71E6D95B1006BAA01 /* LiveTVTests.swift */,
 				BB99FEF91E6D95B2006BAA01 /* Info.plist */,
 			);
@@ -135,6 +213,7 @@
 				BB99FEDB1E6D95B1006BAA01 /* Sources */,
 				BB99FEDC1E6D95B1006BAA01 /* Frameworks */,
 				BB99FEDD1E6D95B1006BAA01 /* Resources */,
+				BB3DDEA91E6DB50300E2CDB1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -152,6 +231,7 @@
 				BB99FEEF1E6D95B1006BAA01 /* Sources */,
 				BB99FEF01E6D95B1006BAA01 /* Frameworks */,
 				BB99FEF11E6D95B1006BAA01 /* Resources */,
+				BB3DDEAA1E6DB51300E2CDB1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -170,6 +250,7 @@
 				BB99FEFA1E6D95B2006BAA01 /* Sources */,
 				BB99FEFB1E6D95B2006BAA01 /* Frameworks */,
 				BB99FEFC1E6D95B2006BAA01 /* Resources */,
+				BB3DDEAB1E6DB52100E2CDB1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -257,13 +338,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BB3DDEA91E6DB50300E2CDB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/swiftformat\" \"${SRCROOT}/LiveTV\"";
+		};
+		BB3DDEAA1E6DB51300E2CDB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/swiftformat\" \"${SRCROOT}/LiveTVTests\"";
+		};
+		BB3DDEAB1E6DB52100E2CDB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/swiftformat\" \"${SRCROOT}/LiveTVUITests\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB99FEDB1E6D95B1006BAA01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB99FEE51E6D95B1006BAA01 /* ViewController.swift in Sources */,
-				BB99FEE31E6D95B1006BAA01 /* AppDelegate.swift in Sources */,
+				BB3DDE9C1E6D9C2A00E2CDB1 /* LiveChannelsViewController.swift in Sources */,
+				BB3DDEA81E6DA4F400E2CDB1 /* LiveChannelsService.swift in Sources */,
+				BB3DDE971E6D9C2A00E2CDB1 /* LiveChannelsConfigurator.swift in Sources */,
+				BB3DDE9A1E6D9C2A00E2CDB1 /* LiveChannelsPresenter.swift in Sources */,
+				BB3DDE9B1E6D9C2A00E2CDB1 /* LiveChannelsRouter.swift in Sources */,
+				BB3DDE981E6D9C2A00E2CDB1 /* LiveChannelsInteractor.swift in Sources */,
+				BB3DDE8F1E6D9BA800E2CDB1 /* AppDelegate.swift in Sources */,
+				BB3DDEAF1E6DB9FC00E2CDB1 /* Injectable.swift in Sources */,
+				BB3DDE991E6D9C2A00E2CDB1 /* LiveChannelsModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +401,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB3DDEA21E6DA39800E2CDB1 /* LiveChannelsInteractorTests.swift in Sources */,
 				BB99FEF81E6D95B1006BAA01 /* LiveTVTests.swift in Sources */,
+				BB3DDEA41E6DA39800E2CDB1 /* LiveChannelsViewControllerTests.swift in Sources */,
+				BB3DDEA31E6DA39800E2CDB1 /* LiveChannelsPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +645,7 @@
 				BB99FF091E6D95B2006BAA01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB99FF0A1E6D95B2006BAA01 /* Build configuration list for PBXNativeTarget "LiveTVTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +654,7 @@
 				BB99FF0C1E6D95B2006BAA01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB99FF0D1E6D95B2006BAA01 /* Build configuration list for PBXNativeTarget "LiveTVUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +663,7 @@
 				BB99FF0F1E6D95B2006BAA01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
