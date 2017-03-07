@@ -71,6 +71,10 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
         let model = self.viewModel.liveChannelsViewModels[indexPath.row]
         cell.configure(with: model)
 
+        #if DEBUG
+            cell.accessibilityIdentifier = "channelCell_\(indexPath.row)"
+        #endif
+
         return cell
     }
 

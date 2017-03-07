@@ -42,4 +42,12 @@ class LiveTVUITests: XCTestCase {
         let collectionView = XCUIApplication().collectionViews[channelsCollectionViewId]
         XCTAssert(collectionView.exists, "Channels collection view is not available")
     }
+
+    func testFirstChannelCellDisplayed() {
+        sleep(3)
+
+        let collectionView = XCUIApplication().collectionViews[channelsCollectionViewId]
+        let firstCell = collectionView.cells["channelCell_0"]
+        XCTAssert(firstCell.exists)
+    }
 }
