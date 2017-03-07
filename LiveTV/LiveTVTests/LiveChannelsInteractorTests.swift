@@ -16,12 +16,18 @@ class LiveChannelsInteractorTests: XCTestCase {
     // MARK: - Subject under test
 
     var sut: LiveChannelsInteractor!
+    let request = LiveChannels.Load.Request()
+    let output = LiveChannelsInteractorOutputSpy()
+    let service = LiveChannelsServiceSpy()
 
     // MARK: - Test lifecycle
 
     override func setUp() {
         super.setUp()
         setupLiveChannelsInteractor()
+
+        sut.inject(service)
+        sut.output = output
     }
 
     override func tearDown() {
@@ -35,7 +41,7 @@ class LiveChannelsInteractorTests: XCTestCase {
     }
 
     // MARK: - Define spy
-    
+
     class LiveChannelsInteractorOutputSpy: LiveChannelsInteractorOutput {
         var presentLoadResponseCalled = false
         var outputSpy: LiveChannels.Load.Response?
@@ -55,18 +61,13 @@ class LiveChannelsInteractorTests: XCTestCase {
 
     // MARK: - Tests
 
-    func testPerformLoadChannelsReturnsList() {
-        let request = LiveChannels.Load.Request()
-        let output = LiveChannelsInteractorOutputSpy()
-
-        let service = LiveChannelsServiceSpy()
-        sut.inject(service)
-
-        sut.output = output
+    func testPerformLoadChannelsResponseCalled() {
         sut.perform(request: request)
-
         assert(output.presentLoadResponseCalled, "Requesting live channels list should ask presenter to do it")
-        assert(output.outputSpy != nil, "Requesting live channels list should ask presenter with a non-null value")
+    }
+
+    func testPerformLoadChannelsReturnsList() {
+        sut.perform(request: request)
         assert(output.outputSpy?.liveChannelsList.count == 1, "Wrong number of channels")
     }
 }
