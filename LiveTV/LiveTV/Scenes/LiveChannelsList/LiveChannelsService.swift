@@ -14,7 +14,6 @@ protocol ListChannelsServiceProtocol {
 
 class LiveChannelsService: ListChannelsServiceProtocol {
     func getLiveChannelsList(success: @escaping ([LiveChannel]) -> Void, failure _: @escaping (Error) -> Void) {
-        // Dummy
         let data = LiveChannel(name: "test", logoUrl: "test", streamingUrl: "test", title: "test")
         success([data])
     }

@@ -35,6 +35,7 @@ class LiveChannelsInteractorTests: XCTestCase {
     }
 
     // MARK: - Define spy
+    
     class LiveChannelsInteractorOutputSpy: LiveChannelsInteractorOutput {
         var presentLoadResponseCalled = false
         var outputSpy: LiveChannels.Load.Response?
@@ -47,9 +48,7 @@ class LiveChannelsInteractorTests: XCTestCase {
 
     class LiveChannelsServiceSpy: ListChannelsServiceProtocol {
         func getLiveChannelsList(success: @escaping ([LiveChannel]) -> Void, failure _: @escaping (Error) -> Void) {
-            // Dummy
             let data = LiveChannel(name: "test", logoUrl: "test", streamingUrl: "test", title: "test")
-//            let data1 = LiveChannel(name: "test", logoUrl: "test", streamingUrl: "test", title: "test")
             success([data])
         }
     }
@@ -62,7 +61,7 @@ class LiveChannelsInteractorTests: XCTestCase {
 
         let service = LiveChannelsServiceSpy()
         sut.inject(service)
-        
+
         sut.output = output
         sut.perform(request: request)
 

@@ -41,7 +41,6 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
     // MARK: - Event handling
 
     func doSomethingOnLoad() {
-        // NOTE: Ask the Interactor to do some work
         let request = LiveChannels.Load.Request()
         output.perform(request: request)
     }
@@ -50,7 +49,5 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
 
     func displaySomething(viewModel _: LiveChannels.Load.ViewModel) {
         // NOTE: Display the result from the Presenter
-
-        // nameTextField.text = viewModel.name
     }
 }

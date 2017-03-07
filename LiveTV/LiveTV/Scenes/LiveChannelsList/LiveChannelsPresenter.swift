@@ -23,7 +23,6 @@ class LiveChannelsPresenter: LiveChannelsPresenterInput {
     weak var output: LiveChannelsPresenterOutput!
 
     // MARK: - Presentation logic
-
     func presentSomething(response: LiveChannels.Load.Response) {
         let models: [LiveChannelViewModel] = response.liveChannelsList.flatMap({ LiveChannelViewModel(liveChannel: $0) })
         let viewModel = LiveChannels.Load.ViewModel(liveChannelsViewModels: models)
