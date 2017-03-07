@@ -20,6 +20,9 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="missingVideo" translatesAutoresizingMaskIntoConstraints="NO" id="JXP-rK-9K8">
                         <rect key="frame" x="0.0" y="0.0" width="144" height="122"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" identifier="channelCellImageView">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="epix" translatesAutoresizingMaskIntoConstraints="NO" id="3Uh-PL-Xh9">
                         <rect key="frame" x="8" y="61" width="43" height="22"/>
@@ -28,6 +31,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoolander 2: The Magnum Edition" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkX-VC-2EX">
                         <rect key="frame" x="8" y="130" width="128" height="42"/>
                         <color key="backgroundColor" red="0.25488662719999999" green="0.2549125552" blue="0.25486493110000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="channelCellTitleLabel"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="42" id="mG6-BK-jb3"/>
                         </constraints>

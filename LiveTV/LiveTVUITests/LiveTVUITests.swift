@@ -8,19 +8,20 @@
 
 import XCTest
 
+let channelsControllerId = "channelsViewController"
+let channelsCollectionViewId = "channelsCollectionView"
+
 class LiveTVUITests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
+
         XCUIApplication().launch()
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        UIApplication.shared.keyWindow?.layer.speed = 100
+        XCUIDevice.shared().orientation = .faceUp
+        XCUIDevice.shared().orientation = .portrait
     }
 
     override func tearDown() {
@@ -28,8 +29,17 @@ class LiveTVUITests: XCTestCase {
         super.tearDown()
     }
 
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testChannelsControllerDisplayed() {
+        sleep(3)
+
+        let controller = XCUIApplication().otherElements[channelsControllerId]
+        XCTAssert(controller.exists, "Channels view controller not available")
+    }
+
+    func testChannelCollectionViewDisplayed() {
+        sleep(3)
+
+        let collectionView = XCUIApplication().collectionViews[channelsCollectionViewId]
+        XCTAssert(collectionView.exists, "Channels collection view is not available")
     }
 }

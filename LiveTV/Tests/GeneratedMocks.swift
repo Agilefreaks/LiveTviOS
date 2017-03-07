@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: LiveTV/Scenes/LiveChannelsList/LiveChannelsService.swift at 2017-03-07 14:32:56 +0000
+// MARK: - Mocks generated from file: LiveTV/Scenes/LiveChannelsList/LiveChannelsService.swift at 2017-03-07 14:48:07 +0000
 
 //
 //  LiveChannelsService.swift

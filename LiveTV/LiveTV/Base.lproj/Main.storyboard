@@ -34,6 +34,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="fg0-xF-mYy"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="channelsViewController"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="3Do-kl-H4B" kind="embed" id="fHV-xK-8ZJ"/>
                                 </connections>
@@ -94,6 +97,9 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="channelsCollectionView"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="3Do-kl-H4B" id="Qdl-oq-PAR"/>
                                 </connections>
