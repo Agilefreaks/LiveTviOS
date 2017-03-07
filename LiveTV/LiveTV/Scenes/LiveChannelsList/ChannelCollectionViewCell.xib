@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E163f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChannelCollectionViewCell" customModule="LiveTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="144" height="178"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="144" height="178"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="missingVideo" translatesAutoresizingMaskIntoConstraints="NO" id="JXP-rK-9K8">
+                        <rect key="frame" x="0.0" y="0.0" width="144" height="121"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="epix" translatesAutoresizingMaskIntoConstraints="NO" id="3Uh-PL-Xh9">
+                        <rect key="frame" x="8" y="91" width="43" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="2AA-FK-FpK"/>
+                            <constraint firstAttribute="width" constant="43" id="WZ5-P6-h9U"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoolander 2: The Magnum Edition" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkX-VC-2EX">
+                        <rect key="frame" x="8" y="130" width="128" height="42"/>
+                        <color key="backgroundColor" red="0.25488662719999999" green="0.2549125552" blue="0.25486493110000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="qnz-3o-72j"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.25488662719726562" green="0.25491255521774292" blue="0.25486493110656738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hkX-VC-2EX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="3JI-Jp-sEB"/>
+                <constraint firstItem="hkX-VC-2EX" firstAttribute="top" secondItem="JXP-rK-9K8" secondAttribute="bottom" constant="9" id="6Za-wn-Zbu"/>
+                <constraint firstItem="3Uh-PL-Xh9" firstAttribute="bottom" secondItem="JXP-rK-9K8" secondAttribute="bottom" constant="-8" id="ANs-7A-1LN"/>
+                <constraint firstItem="3Uh-PL-Xh9" firstAttribute="leading" secondItem="JXP-rK-9K8" secondAttribute="leading" constant="8" id="HRF-rS-iT7"/>
+                <constraint firstAttribute="bottom" secondItem="hkX-VC-2EX" secondAttribute="bottom" constant="6" id="QNh-4g-GNY"/>
+                <constraint firstAttribute="trailing" secondItem="hkX-VC-2EX" secondAttribute="trailing" constant="8" id="Ryn-3I-VWi"/>
+                <constraint firstAttribute="trailing" secondItem="JXP-rK-9K8" secondAttribute="trailing" id="ZO6-F7-qlB"/>
+                <constraint firstItem="JXP-rK-9K8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dmm-wI-GRt"/>
+                <constraint firstItem="JXP-rK-9K8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mGf-rQ-IPi"/>
+            </constraints>
+            <size key="customSize" width="144" height="178"/>
+            <connections>
+                <outlet property="imageView" destination="JXP-rK-9K8" id="YEF-cB-Cea"/>
+                <outlet property="logoImageView" destination="3Uh-PL-Xh9" id="eqa-af-sY9"/>
+                <outlet property="titleLabel" destination="hkX-VC-2EX" id="6Qf-oe-H9R"/>
+            </connections>
+            <point key="canvasLocation" x="-26" y="43"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="epix" width="309" height="206"/>
+        <image name="missingVideo" width="100" height="100"/>
+    </resources>
+</document>

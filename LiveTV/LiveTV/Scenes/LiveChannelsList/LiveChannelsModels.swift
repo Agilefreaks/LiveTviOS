@@ -24,19 +24,3 @@ struct LiveChannels {
         }
     }
 }
-
-class LiveChannelViewModel {
-    let liveChannel: LiveChannel
-
-    // MARK: - Initialization
-    init(liveChannel input: LiveChannel) {
-        self.liveChannel = input
-    }
-}
-
-struct LiveChannel {
-    let name: String
-    let logoUrl: String
-    let streamingUrl: String
-    let title: String
-}
