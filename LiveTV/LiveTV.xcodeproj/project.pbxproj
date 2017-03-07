@@ -18,8 +18,6 @@
 		BB3DDE9B1E6D9C2A00E2CDB1 /* LiveChannelsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE941E6D9C2A00E2CDB1 /* LiveChannelsRouter.swift */; };
 		BB3DDE9C1E6D9C2A00E2CDB1 /* LiveChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE951E6D9C2A00E2CDB1 /* LiveChannelsViewController.swift */; };
 		BB3DDEA21E6DA39800E2CDB1 /* LiveChannelsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE9E1E6DA39800E2CDB1 /* LiveChannelsInteractorTests.swift */; };
-		BB3DDEA31E6DA39800E2CDB1 /* LiveChannelsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE9F1E6DA39800E2CDB1 /* LiveChannelsPresenterTests.swift */; };
-		BB3DDEA41E6DA39800E2CDB1 /* LiveChannelsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDEA01E6DA39800E2CDB1 /* LiveChannelsViewControllerTests.swift */; };
 		BB3DDEA81E6DA4F400E2CDB1 /* LiveChannelsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDEA71E6DA4F400E2CDB1 /* LiveChannelsService.swift */; };
 		BB3DDEAF1E6DB9FC00E2CDB1 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDEAE1E6DB9FC00E2CDB1 /* Injectable.swift */; };
 		BB5933521E6EE06B00149A92 /* ChannelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5933501E6EE06B00149A92 /* ChannelCollectionViewCell.swift */; };
@@ -31,8 +29,7 @@
 		BB99FEE81E6D95B1006BAA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEE61E6D95B1006BAA01 /* Main.storyboard */; };
 		BB99FEEA1E6D95B1006BAA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEE91E6D95B1006BAA01 /* Assets.xcassets */; };
 		BB99FEED1E6D95B1006BAA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEEB1E6D95B1006BAA01 /* LaunchScreen.storyboard */; };
-		BB99FEF81E6D95B1006BAA01 /* LiveTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99FEF71E6D95B1006BAA01 /* LiveTVTests.swift */; };
-		BB99FF031E6D95B2006BAA01 /* LiveTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99FF021E6D95B2006BAA01 /* LiveTVUITests.swift */; };
+		BB99FF031E6D95B2006BAA01 /* LiveChannelsViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99FF021E6D95B2006BAA01 /* LiveChannelsViewControllerUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +64,6 @@
 		BB3DDE941E6D9C2A00E2CDB1 /* LiveChannelsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsRouter.swift; sourceTree = "<group>"; };
 		BB3DDE951E6D9C2A00E2CDB1 /* LiveChannelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsViewController.swift; sourceTree = "<group>"; };
 		BB3DDE9E1E6DA39800E2CDB1 /* LiveChannelsInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsInteractorTests.swift; sourceTree = "<group>"; };
-		BB3DDE9F1E6DA39800E2CDB1 /* LiveChannelsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsPresenterTests.swift; sourceTree = "<group>"; };
-		BB3DDEA01E6DA39800E2CDB1 /* LiveChannelsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsViewControllerTests.swift; sourceTree = "<group>"; };
 		BB3DDEA71E6DA4F400E2CDB1 /* LiveChannelsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsService.swift; sourceTree = "<group>"; };
 		BB3DDEAE1E6DB9FC00E2CDB1 /* Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		BB5933501E6EE06B00149A92 /* ChannelCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -83,10 +78,9 @@
 		BB99FEEC1E6D95B1006BAA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB99FEEE1E6D95B1006BAA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB99FEF31E6D95B1006BAA01 /* LiveTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB99FEF71E6D95B1006BAA01 /* LiveTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTVTests.swift; sourceTree = "<group>"; };
 		BB99FEF91E6D95B2006BAA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB99FEFE1E6D95B2006BAA01 /* LiveTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB99FF021E6D95B2006BAA01 /* LiveTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTVUITests.swift; sourceTree = "<group>"; };
+		BB99FF021E6D95B2006BAA01 /* LiveChannelsViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveChannelsViewControllerUITests.swift; sourceTree = "<group>"; };
 		BB99FF041E6D95B2006BAA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE8C66C6D7B748358C59FDAE /* Pods_LiveTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA59C3CA3375E79D415E9C70 /* Pods-LiveTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveTV/Pods-LiveTV.debug.xcconfig"; sourceTree = "<group>"; };
@@ -182,8 +176,6 @@
 			children = (
 				BB5933601E6EFC1600149A92 /* GeneratedMocks.swift */,
 				BB3DDE9E1E6DA39800E2CDB1 /* LiveChannelsInteractorTests.swift */,
-				BB3DDE9F1E6DA39800E2CDB1 /* LiveChannelsPresenterTests.swift */,
-				BB3DDEA01E6DA39800E2CDB1 /* LiveChannelsViewControllerTests.swift */,
 			);
 			name = LiveChannelsList;
 			sourceTree = "<group>";
@@ -262,7 +254,6 @@
 			isa = PBXGroup;
 			children = (
 				BB3DDEA61E6DA39C00E2CDB1 /* LiveChannelsList */,
-				BB99FEF71E6D95B1006BAA01 /* LiveTVTests.swift */,
 				BB99FEF91E6D95B2006BAA01 /* Info.plist */,
 			);
 			path = LiveTVTests;
@@ -271,7 +262,7 @@
 		BB99FF011E6D95B2006BAA01 /* LiveTVUITests */ = {
 			isa = PBXGroup;
 			children = (
-				BB99FF021E6D95B2006BAA01 /* LiveTVUITests.swift */,
+				BB99FF021E6D95B2006BAA01 /* LiveChannelsViewControllerUITests.swift */,
 				BB99FF041E6D95B2006BAA01 /* Info.plist */,
 			);
 			path = LiveTVUITests;
@@ -639,9 +630,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB3DDEA21E6DA39800E2CDB1 /* LiveChannelsInteractorTests.swift in Sources */,
-				BB99FEF81E6D95B1006BAA01 /* LiveTVTests.swift in Sources */,
-				BB3DDEA41E6DA39800E2CDB1 /* LiveChannelsViewControllerTests.swift in Sources */,
-				BB3DDEA31E6DA39800E2CDB1 /* LiveChannelsPresenterTests.swift in Sources */,
 				BB5933611E6EFC1600149A92 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,7 +638,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB99FF031E6D95B2006BAA01 /* LiveTVUITests.swift in Sources */,
+				BB99FF031E6D95B2006BAA01 /* LiveChannelsViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

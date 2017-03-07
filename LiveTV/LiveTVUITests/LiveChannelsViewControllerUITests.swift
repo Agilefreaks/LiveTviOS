@@ -1,6 +1,6 @@
 //
 //  LiveTVUITests.swift
-//  LiveTVUITests
+//  LiveChannelsViewControllerUITests
 //
 //  Created by Mihai Pantiru on 06/03/2017.
 //  Copyright © 2017 AgileFreaks. All rights reserved.
@@ -11,7 +11,7 @@ import XCTest
 let channelsControllerId = "channelsViewController"
 let channelsCollectionViewId = "channelsCollectionView"
 
-class LiveTVUITests: XCTestCase {
+class LiveChannelsViewControllerUITests: XCTestCase {
 
     override func setUp() {
         super.setUp()
