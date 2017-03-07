@@ -14,8 +14,11 @@ protocol ListChannelsServiceProtocol {
 
 class LiveChannelsService: ListChannelsServiceProtocol {
     func getLiveChannelsList(success: @escaping ([LiveChannel]) -> Void, failure: @escaping (Error) -> Void) {
-        let data = LiveChannel(name: "test", logoUrl: "test", streamingUrl: "test", title: "test")
-        success([data, data, data, data, data])
+        let epix = LiveChannel(name: "Epix", logoUrl: "test", streamingUrl: "test", title: "test epix")
+        let epix2 = LiveChannel(name: "Epix 2", logoUrl: "test", streamingUrl: "test", title: "test epix 2")
+        let epix3 = LiveChannel(name: "Epix 3", logoUrl: "test", streamingUrl: "test", title: "test epix 3")
+        let epix4 = LiveChannel(name: "Epix 4", logoUrl: "test", streamingUrl: "test", title: "test epix 4")
+        success([epix, epix2, epix3, epix4])
 
         let errorTemp = NSError(domain: "", code: 300, userInfo: nil)
         failure(errorTemp)
