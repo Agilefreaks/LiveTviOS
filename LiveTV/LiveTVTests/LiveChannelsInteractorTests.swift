@@ -11,6 +11,7 @@
 
 @testable import LiveTV
 import XCTest
+import Cuckoo
 
 class LiveChannelsInteractorTests: XCTestCase {
     // MARK: - Subject under test

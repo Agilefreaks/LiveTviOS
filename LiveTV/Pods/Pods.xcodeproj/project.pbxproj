@@ -7,61 +7,154 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FD1B977D151CF7BD8F6E71917F316D8 /* StubAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C3393785E68B22191E18A9636A634 /* StubAction.swift */; };
+		129E73EA5EC7FBD6751A4CB436D3C93C /* ToBeStubbedReadOnlyProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB45734F5CCD26C8C7B266E63C2BD7 /* ToBeStubbedReadOnlyProperty.swift */; };
+		13593BC194FD5F44F8E393FC79457CFD /* VerificationProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95EA7B46362D34E27E590BC794EE69 /* VerificationProxy.swift */; };
+		148557F1CCB9E51E2C5EAA59F9A994A9 /* VerifyProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A9316C8F67AFDC04B08128715C1DA /* VerifyProperty.swift */; };
+		16EE718124B48BF6CE0F88895AC82AC5 /* CallMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910DA1936CFE47F98909DF1373C12AD1 /* CallMatcher.swift */; };
+		1D72DF43E81460E9D75DB6AA50A2FD42 /* StubNoReturnFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23D525D1E123A85A116F99C37AE8B64 /* StubNoReturnFunction.swift */; };
+		216BF678EFAFAACCF8172E207B58A44A /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83251658852114BE60540492C8CC92C /* Stub.swift */; };
+		27C96D7523844010858874BD6476F2FC /* StubThrowingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C673D84FDDA5A0739509B2A08AED0 /* StubThrowingFunction.swift */; };
 		32E2751F4DAF8A4B47BFD4388C84790C /* Pods-LiveTVUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0F9010FAD530E0725C1B8A27DF7579 /* Pods-LiveTVUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		340554F5C205A85737AC34B9F305A3E2 /* Pods-LiveTV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF24390E16A657FA8018A1A99B77D5 /* Pods-LiveTV-dummy.m */; };
+		34815D8F03D5BD45820DB904E3FDAD63 /* StubFunctionThenCallRealImplementationTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2DEC97C4254ED678E2D88C62BBD49D /* StubFunctionThenCallRealImplementationTrait.swift */; };
+		37031FD41B324738CA58BCDA3E412787 /* BaseStubFunctionTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD138FAC5FF3A6418C3428CA4EB37380 /* BaseStubFunctionTrait.swift */; };
+		4535380B656590BC7CA3229C3083C421 /* Cuckoo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED27C74C1D9DB97BA7B525899AC21BC4 /* Cuckoo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47F111FBEC16A26D083DD88F9BA6B5E0 /* CuckooFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A98F8CB94899E7311B194AC8241BBB2 /* CuckooFunctions.swift */; };
 		576662F4536C242E45A64008CA5A8C3F /* Pods-LiveTVTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE0BE6B33893502ABE84E6A2416BBE8 /* Pods-LiveTVTests-dummy.m */; };
-		6FC2372E6D4872820BC463F0FC1695AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5B96232898A102F4A1514CC3E3F3B999 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0461F820A1A1FF586BDD1E30AA1F8A8 /* Utils.swift */; };
+		63A7B46CC948B8A9FD817118FB8E44BA /* Pods-LiveTV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF24390E16A657FA8018A1A99B77D5 /* Pods-LiveTV-dummy.m */; };
+		699D21C734212C08961FE408E89AE0C3 /* StubFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C979E5AE14BD5C1367CBF08CC14D20E2 /* StubFunction.swift */; };
+		7698C16BB3224169A750648787104110 /* StubFunctionThenThrowTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A49230389C806952A259B5D1D6BC84 /* StubFunctionThenThrowTrait.swift */; };
 		7CB3FBB16DA063095699578D7C26142F /* Pods-LiveTVUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 166EBF3C015BA3769FF3FBB74A71ECA9 /* Pods-LiveTVUITests-dummy.m */; };
-		AA420EEE2D08331A355DDCD47B485682 /* Pods-LiveTV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C7AF4B1A543A4C2BBCA9540BB61DF0 /* Pods-LiveTV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9E7451A7BA2BC84549B03AED15600A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		7E8B7AC9A57864FA93AC6B490E46E2BD /* StubFunctionThenReturnTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = D945B1F8E7662BFCF8360BE6513C0DFA /* StubFunctionThenReturnTrait.swift */; };
+		82E1F896B486D437E04EFDAF3134E02C /* StubFunctionThenTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE83B9DE996655499F8BF918A30CEF /* StubFunctionThenTrait.swift */; };
+		88BBCC866C0AD237E41E5E252661D4E0 /* ToBeStubbedProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080F4A6C89773B77803C29F9A143DAE9 /* ToBeStubbedProperty.swift */; };
+		92520A52CBE77FE2467790F20807A198 /* ParameterMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782C79A4EACC5ADD0E0786D31351116 /* ParameterMatcher.swift */; };
+		9E5398EF45402E8F7D335662064F7B44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
+		B376BBBB09D53083B558B04EF9C0DF46 /* DefaultValueRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A4B783FD28DA8848143DAF4F01168B /* DefaultValueRegistry.swift */; };
+		B52CBED01FE1529E0A1612A3CEE0B93D /* MockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EFAB43F67559E08F867E7E85250789 /* MockManager.swift */; };
+		B9E7451A7BA2BC84549B03AED15600A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
+		BA8DCFAA89DB7F9566A92A8B7E517EB6 /* StubbingProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031693E6B5855973936E791CE9E1D9F7 /* StubbingProxy.swift */; };
+		BE877915D67DE78341C624B8F658C7E8 /* VerifyReadOnlyProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A38039327939D5FA5502660CD9E890B /* VerifyReadOnlyProperty.swift */; };
+		BEA7636272F79D374DD586649A2FB45B /* Cuckoo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C5C8D3E7DA1BE89543ABCD38F97BB /* Cuckoo-dummy.m */; };
 		C797764D0382604AD6F3909EAF046411 /* Pods-LiveTVTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B391AA7374C0CB467966BFFF99B480B4 /* Pods-LiveTVTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7EDB14E1DAF8D3784B610DEB072D183 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		CD28C7912D6E360E887CEE31F33151BB /* __DoNotUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838836951DC675DF0737A2FBE5A90351 /* __DoNotUse.swift */; };
+		D1D276ECB43AACD564333536BE426557 /* ArgumentCaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334FAA3912143326C600CD93C687BA05 /* ArgumentCaptor.swift */; };
+		D7567346E9BDF3B17EBCFE65BCB3764B /* ParameterMatcherFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774C936A743CCC36309AD7F82A3FF01 /* ParameterMatcherFunctions.swift */; };
+		DE34E4F9830DF781B071D95209426559 /* StubNoReturnThrowingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5590D20127DE1FE70A53D582ADD2EF8A /* StubNoReturnThrowingFunction.swift */; };
+		E0238814DBB74199178F228EC7CCCAB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
+		E3BCFFA541874E7FBB2B41F76C49CF25 /* Pods-LiveTV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C7AF4B1A543A4C2BBCA9540BB61DF0 /* Pods-LiveTV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7294F60ACBB72A657D0A4E4BEDE0490 /* StubCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C8D298FDFF866D39DF55734AA3B8B0 /* StubCall.swift */; };
+		EBD3207C7C030F7D66929C2E4C90329D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECEA2EDA41473899EE391CA038EDC38 /* XCTest.framework */; };
+		F22C654A3DEC2CEC12D8E175D1140E85 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E96B9E691A30AECF88B412526159B5 /* Mock.swift */; };
+		F25360FC373749AC0F8FF6D5C1B191FD /* Matchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E9C4E57ED5931862295DD4C703C2A7 /* Matchable.swift */; };
+		F7EDB14E1DAF8D3784B610DEB072D183 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
+		F918CE5727AAEE587FD4E70B79FCF567 /* CallMatcherFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3549AD64F04CE5CE6F5E8043983F03 /* CallMatcherFunctions.swift */; };
+		FD034541830DA7A15C83681630894CEC /* StubFunctionThenDoNothingTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827B7B76B7F4741A6266EEB99A4A8792 /* StubFunctionThenDoNothingTrait.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3CD26FFD0C1DD96BD3EAFCAA380C294F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D275F856FD25D5D35D348FFDD8B1242;
+			remoteInfo = Cuckoo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		01EFAB43F67559E08F867E7E85250789 /* MockManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MockManager.swift; path = Source/MockManager.swift; sourceTree = "<group>"; };
+		031693E6B5855973936E791CE9E1D9F7 /* StubbingProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubbingProxy.swift; path = Source/Mock/StubbingProxy.swift; sourceTree = "<group>"; };
 		0490CA5B4A5F9EFC5D1AC73632361BE9 /* Pods-LiveTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiveTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		080F4A6C89773B77803C29F9A143DAE9 /* ToBeStubbedProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToBeStubbedProperty.swift; path = Source/Stubbing/ToBeStubbedProperty/ToBeStubbedProperty.swift; sourceTree = "<group>"; };
 		0C178D882E53E9844A58E32DF19DA80E /* Pods-LiveTVTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiveTVTests-frameworks.sh"; sourceTree = "<group>"; };
 		1414A59855B7AB571B166FA39C4BC79B /* Pods-LiveTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiveTV.release.xcconfig"; sourceTree = "<group>"; };
 		166EBF3C015BA3769FF3FBB74A71ECA9 /* Pods-LiveTVUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiveTVUITests-dummy.m"; sourceTree = "<group>"; };
+		1C3C5C8D3E7DA1BE89543ABCD38F97BB /* Cuckoo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cuckoo-dummy.m"; sourceTree = "<group>"; };
+		1C95EA7B46362D34E27E590BC794EE69 /* VerificationProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerificationProxy.swift; path = Source/Mock/VerificationProxy.swift; sourceTree = "<group>"; };
 		1F37497B231111DD6EDF67351EC16E19 /* Pods-LiveTVUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiveTVUITests-resources.sh"; sourceTree = "<group>"; };
 		20FA26250858E214C27C78D9EA8ADF82 /* Pods-LiveTV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LiveTV.modulemap"; sourceTree = "<group>"; };
+		26A4B783FD28DA8848143DAF4F01168B /* DefaultValueRegistry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultValueRegistry.swift; path = Source/DefaultValueRegistry.swift; sourceTree = "<group>"; };
 		29C7AF4B1A543A4C2BBCA9540BB61DF0 /* Pods-LiveTV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiveTV-umbrella.h"; sourceTree = "<group>"; };
 		2A926EAF5E65260F7B96CC8C8A706005 /* Pods-LiveTV-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiveTV-frameworks.sh"; sourceTree = "<group>"; };
+		30E96B9E691A30AECF88B412526159B5 /* Mock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mock.swift; path = Source/Mock/Mock.swift; sourceTree = "<group>"; };
 		31615C014A8DCFC03B6714AB5202578B /* Pods-LiveTV-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiveTV-acknowledgements.plist"; sourceTree = "<group>"; };
+		32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		334FAA3912143326C600CD93C687BA05 /* ArgumentCaptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentCaptor.swift; path = Source/Verification/ArgumentCaptor.swift; sourceTree = "<group>"; };
+		3514003B1847A046610963A59A78DAAE /* Cuckoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cuckoo.framework; path = Cuckoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7AC136B3F61E9476E55B285218F366 /* Pods-LiveTVUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LiveTVUITests.modulemap"; sourceTree = "<group>"; };
+		3FDE83B9DE996655499F8BF918A30CEF /* StubFunctionThenTrait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubFunctionThenTrait.swift; path = Source/Stubbing/StubFunction/Trait/StubFunctionThenTrait.swift; sourceTree = "<group>"; };
 		43470319877EF17ED8AEA6920D9118C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46E9C4E57ED5931862295DD4C703C2A7 /* Matchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Matchable.swift; path = Source/Matching/Matchable.swift; sourceTree = "<group>"; };
 		47F1FC6DAF7A64E1C9CF42C94A3413D8 /* Pods-LiveTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiveTV.debug.xcconfig"; sourceTree = "<group>"; };
+		4A38039327939D5FA5502660CD9E890B /* VerifyReadOnlyProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerifyReadOnlyProperty.swift; path = Source/Verification/VerifyProperty/VerifyReadOnlyProperty.swift; sourceTree = "<group>"; };
 		4E90191EACD13495C9FD5FC44912810F /* Pods-LiveTVTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LiveTVTests.modulemap"; sourceTree = "<group>"; };
+		51C8D298FDFF866D39DF55734AA3B8B0 /* StubCall.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubCall.swift; path = Source/Stubbing/StubCall.swift; sourceTree = "<group>"; };
+		521C673D84FDDA5A0739509B2A08AED0 /* StubThrowingFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubThrowingFunction.swift; path = Source/Stubbing/StubFunction/StubThrowingFunction.swift; sourceTree = "<group>"; };
+		5590D20127DE1FE70A53D582ADD2EF8A /* StubNoReturnThrowingFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubNoReturnThrowingFunction.swift; path = Source/Stubbing/StubFunction/StubNoReturnThrowingFunction.swift; sourceTree = "<group>"; };
+		5782C79A4EACC5ADD0E0786D31351116 /* ParameterMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterMatcher.swift; path = Source/Matching/ParameterMatcher.swift; sourceTree = "<group>"; };
 		597EAD5D2E1DA958089A864E1DDF9A82 /* Pods-LiveTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiveTVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5F8A9316C8F67AFDC04B08128715C1DA /* VerifyProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerifyProperty.swift; path = Source/Verification/VerifyProperty/VerifyProperty.swift; sourceTree = "<group>"; };
 		6139762553E1BC7D22EB70A0F57F40BE /* Pods-LiveTV-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiveTV-resources.sh"; sourceTree = "<group>"; };
+		6A98F8CB94899E7311B194AC8241BBB2 /* CuckooFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CuckooFunctions.swift; path = Source/CuckooFunctions.swift; sourceTree = "<group>"; };
 		6DFD5A8698B1FD10542255F1F5B23243 /* Pods-LiveTV-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiveTV-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6EDCBB2009281C8103513A35DFD24D3D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76BA0B72320E34CFADA274543C39134D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7790F7D36185939C8738DEDAFDAB76C2 /* Pods-LiveTVUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiveTVUITests-frameworks.sh"; sourceTree = "<group>"; };
-		7C32098EC59FD23C77B8EE2AFB39DE92 /* Pods_LiveTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LiveTVUITests.framework; path = "Pods-LiveTVUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78B5F1299D3CB6B5D582EB665369F45A /* Cuckoo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cuckoo-prefix.pch"; sourceTree = "<group>"; };
+		827B7B76B7F4741A6266EEB99A4A8792 /* StubFunctionThenDoNothingTrait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubFunctionThenDoNothingTrait.swift; path = Source/Stubbing/StubFunction/Trait/StubFunctionThenDoNothingTrait.swift; sourceTree = "<group>"; };
 		82C259F975931074E3F24FC2029A8443 /* Pods-LiveTVTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiveTVTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		838836951DC675DF0737A2FBE5A90351 /* __DoNotUse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = __DoNotUse.swift; path = Source/Verification/__DoNotUse.swift; sourceTree = "<group>"; };
 		85A84E2A9871906F6F0B4CE583BE5222 /* Pods-LiveTVUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiveTVUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8B44311B30C3A7307B6596E5C361940E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		910DA1936CFE47F98909DF1373C12AD1 /* CallMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallMatcher.swift; path = Source/Matching/CallMatcher.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		947E16DBDCF80B3653049DB866DD4663 /* Pods-LiveTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiveTVTests.debug.xcconfig"; sourceTree = "<group>"; };
 		975751B7539C3FF8496AB0256989D688 /* Pods-LiveTVTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiveTVTests-resources.sh"; sourceTree = "<group>"; };
 		9C0F9010FAD530E0725C1B8A27DF7579 /* Pods-LiveTVUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiveTVUITests-umbrella.h"; sourceTree = "<group>"; };
+		9E456F84976E3357603FA44F086978BC /* Cuckoo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cuckoo.xcconfig; sourceTree = "<group>"; };
+		A02435E682AB499DFC77E3E989214C65 /* Pods_LiveTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LiveTVUITests.framework; path = "Pods-LiveTVUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23D525D1E123A85A116F99C37AE8B64 /* StubNoReturnFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubNoReturnFunction.swift; path = Source/Stubbing/StubFunction/StubNoReturnFunction.swift; sourceTree = "<group>"; };
+		AECEA2EDA41473899EE391CA038EDC38 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B31157A5E82545203F967C1953F2783F /* Pods-LiveTVTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiveTVTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B391AA7374C0CB467966BFFF99B480B4 /* Pods-LiveTVTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiveTVTests-umbrella.h"; sourceTree = "<group>"; };
+		BAEB45734F5CCD26C8C7B266E63C2BD7 /* ToBeStubbedReadOnlyProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToBeStubbedReadOnlyProperty.swift; path = Source/Stubbing/ToBeStubbedProperty/ToBeStubbedReadOnlyProperty.swift; sourceTree = "<group>"; };
 		BBE0BE6B33893502ABE84E6A2416BBE8 /* Pods-LiveTVTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiveTVTests-dummy.m"; sourceTree = "<group>"; };
 		C10B471DD2FBA498008CE755AC13D0A0 /* Pods-LiveTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiveTVTests.release.xcconfig"; sourceTree = "<group>"; };
 		C5DB7DFD582B6A32E68ADC85ABAE63FF /* Pods-LiveTVUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiveTVUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C5F3FEA45EECB94CD50E119ADD125A7B /* Cuckoo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Cuckoo.modulemap; sourceTree = "<group>"; };
+		C774C936A743CCC36309AD7F82A3FF01 /* ParameterMatcherFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterMatcherFunctions.swift; path = Source/Matching/ParameterMatcherFunctions.swift; sourceTree = "<group>"; };
+		C979E5AE14BD5C1367CBF08CC14D20E2 /* StubFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubFunction.swift; path = Source/Stubbing/StubFunction/StubFunction.swift; sourceTree = "<group>"; };
+		D0461F820A1A1FF586BDD1E30AA1F8A8 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Source/Utils.swift; sourceTree = "<group>"; };
+		D1A49230389C806952A259B5D1D6BC84 /* StubFunctionThenThrowTrait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubFunctionThenThrowTrait.swift; path = Source/Stubbing/StubFunction/Trait/StubFunctionThenThrowTrait.swift; sourceTree = "<group>"; };
 		D6AF24390E16A657FA8018A1A99B77D5 /* Pods-LiveTV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiveTV-dummy.m"; sourceTree = "<group>"; };
-		E20ED4B1C16FC8339743DD0C3E2D0855 /* Pods_LiveTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LiveTVTests.framework; path = "Pods-LiveTVTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4701B9A8401D4381E6B89752247934C /* Pods_LiveTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LiveTV.framework; path = "Pods-LiveTV.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83251658852114BE60540492C8CC92C /* Stub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stub.swift; path = Source/Stubbing/Stub.swift; sourceTree = "<group>"; };
+		D945B1F8E7662BFCF8360BE6513C0DFA /* StubFunctionThenReturnTrait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubFunctionThenReturnTrait.swift; path = Source/Stubbing/StubFunction/Trait/StubFunctionThenReturnTrait.swift; sourceTree = "<group>"; };
+		DC3549AD64F04CE5CE6F5E8043983F03 /* CallMatcherFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallMatcherFunctions.swift; path = Source/Matching/CallMatcherFunctions.swift; sourceTree = "<group>"; };
+		E44297E468ED8FA1CD644389D83AD655 /* Pods_LiveTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LiveTV.framework; path = "Pods-LiveTV.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2DEC97C4254ED678E2D88C62BBD49D /* StubFunctionThenCallRealImplementationTrait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubFunctionThenCallRealImplementationTrait.swift; path = Source/Stubbing/StubFunction/Trait/StubFunctionThenCallRealImplementationTrait.swift; sourceTree = "<group>"; };
+		ED27C74C1D9DB97BA7B525899AC21BC4 /* Cuckoo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cuckoo-umbrella.h"; sourceTree = "<group>"; };
+		ED3C3393785E68B22191E18A9636A634 /* StubAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubAction.swift; path = Source/Stubbing/StubAction.swift; sourceTree = "<group>"; };
+		F6D918AB3A4AFDE0E29094017E26D6C4 /* Pods_LiveTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LiveTVTests.framework; path = "Pods-LiveTVTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD138FAC5FF3A6418C3428CA4EB37380 /* BaseStubFunctionTrait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseStubFunctionTrait.swift; path = Source/Stubbing/StubFunction/Trait/BaseStubFunctionTrait.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		66D94D8685DF23DD2EB8434E668DAF4A /* Frameworks */ = {
+		020CBB724E590EBB703543BFBFA8B781 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FC2372E6D4872820BC463F0FC1695AB /* Foundation.framework in Frameworks */,
+				9E5398EF45402E8F7D335662064F7B44 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31BA3153BB118CAFE3BDFE57C9F0A38B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0238814DBB74199178F228EC7CCCAB2 /* Foundation.framework in Frameworks */,
+				EBD3207C7C030F7D66929C2E4C90329D /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +177,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4258760A2981CB67D1E6C6C8F382EA1C /* Cuckoo */ = {
+			isa = PBXGroup;
+			children = (
+				838836951DC675DF0737A2FBE5A90351 /* __DoNotUse.swift */,
+				334FAA3912143326C600CD93C687BA05 /* ArgumentCaptor.swift */,
+				FD138FAC5FF3A6418C3428CA4EB37380 /* BaseStubFunctionTrait.swift */,
+				910DA1936CFE47F98909DF1373C12AD1 /* CallMatcher.swift */,
+				DC3549AD64F04CE5CE6F5E8043983F03 /* CallMatcherFunctions.swift */,
+				6A98F8CB94899E7311B194AC8241BBB2 /* CuckooFunctions.swift */,
+				26A4B783FD28DA8848143DAF4F01168B /* DefaultValueRegistry.swift */,
+				46E9C4E57ED5931862295DD4C703C2A7 /* Matchable.swift */,
+				30E96B9E691A30AECF88B412526159B5 /* Mock.swift */,
+				01EFAB43F67559E08F867E7E85250789 /* MockManager.swift */,
+				5782C79A4EACC5ADD0E0786D31351116 /* ParameterMatcher.swift */,
+				C774C936A743CCC36309AD7F82A3FF01 /* ParameterMatcherFunctions.swift */,
+				D83251658852114BE60540492C8CC92C /* Stub.swift */,
+				ED3C3393785E68B22191E18A9636A634 /* StubAction.swift */,
+				031693E6B5855973936E791CE9E1D9F7 /* StubbingProxy.swift */,
+				51C8D298FDFF866D39DF55734AA3B8B0 /* StubCall.swift */,
+				C979E5AE14BD5C1367CBF08CC14D20E2 /* StubFunction.swift */,
+				EB2DEC97C4254ED678E2D88C62BBD49D /* StubFunctionThenCallRealImplementationTrait.swift */,
+				827B7B76B7F4741A6266EEB99A4A8792 /* StubFunctionThenDoNothingTrait.swift */,
+				D945B1F8E7662BFCF8360BE6513C0DFA /* StubFunctionThenReturnTrait.swift */,
+				D1A49230389C806952A259B5D1D6BC84 /* StubFunctionThenThrowTrait.swift */,
+				3FDE83B9DE996655499F8BF918A30CEF /* StubFunctionThenTrait.swift */,
+				A23D525D1E123A85A116F99C37AE8B64 /* StubNoReturnFunction.swift */,
+				5590D20127DE1FE70A53D582ADD2EF8A /* StubNoReturnThrowingFunction.swift */,
+				521C673D84FDDA5A0739509B2A08AED0 /* StubThrowingFunction.swift */,
+				080F4A6C89773B77803C29F9A143DAE9 /* ToBeStubbedProperty.swift */,
+				BAEB45734F5CCD26C8C7B266E63C2BD7 /* ToBeStubbedReadOnlyProperty.swift */,
+				D0461F820A1A1FF586BDD1E30AA1F8A8 /* Utils.swift */,
+				1C95EA7B46362D34E27E590BC794EE69 /* VerificationProxy.swift */,
+				5F8A9316C8F67AFDC04B08128715C1DA /* VerifyProperty.swift */,
+				4A38039327939D5FA5502660CD9E890B /* VerifyReadOnlyProperty.swift */,
+				CC1880300999435EF67357C1C4E9615D /* Support Files */,
+			);
+			name = Cuckoo;
+			path = Cuckoo;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D9CFF97A2D41D7CB20A427D5386C7A6 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		43E27250CED214AA33FCB5F090A3B638 /* Pods-LiveTVUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,32 +243,32 @@
 			path = "Target Support Files/Pods-LiveTVUITests";
 			sourceTree = "<group>";
 		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				84872DEA8F3CE0E8E269C8CE496FE453 /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				8DF6693DE9FAC19375B6A1DE96550EBC /* Pods */,
+				D4B2186D94CFDC661910E17AB15C5A91 /* Products */,
 				F2E4E167C879B973011F485A5A5DA395 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		84872DEA8F3CE0E8E269C8CE496FE453 /* Products */ = {
+		8DF6693DE9FAC19375B6A1DE96550EBC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F4701B9A8401D4381E6B89752247934C /* Pods_LiveTV.framework */,
-				E20ED4B1C16FC8339743DD0C3E2D0855 /* Pods_LiveTVTests.framework */,
-				7C32098EC59FD23C77B8EE2AFB39DE92 /* Pods_LiveTVUITests.framework */,
+				4258760A2981CB67D1E6C6C8F382EA1C /* Cuckoo */,
 			);
-			name = Products;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D9CFF97A2D41D7CB20A427D5386C7A6 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */,
+				AECEA2EDA41473899EE391CA038EDC38 /* XCTest.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		A648533AB2DE6CBF2B6D42FD14072E82 /* Pods-LiveTVTests */ = {
@@ -148,12 +289,29 @@
 			path = "Target Support Files/Pods-LiveTVTests";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		CC1880300999435EF67357C1C4E9615D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				C5F3FEA45EECB94CD50E119ADD125A7B /* Cuckoo.modulemap */,
+				9E456F84976E3357603FA44F086978BC /* Cuckoo.xcconfig */,
+				1C3C5C8D3E7DA1BE89543ABCD38F97BB /* Cuckoo-dummy.m */,
+				78B5F1299D3CB6B5D582EB665369F45A /* Cuckoo-prefix.pch */,
+				ED27C74C1D9DB97BA7B525899AC21BC4 /* Cuckoo-umbrella.h */,
+				76BA0B72320E34CFADA274543C39134D /* Info.plist */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/Cuckoo";
+			sourceTree = "<group>";
+		};
+		D4B2186D94CFDC661910E17AB15C5A91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3514003B1847A046610963A59A78DAAE /* Cuckoo.framework */,
+				E44297E468ED8FA1CD644389D83AD655 /* Pods_LiveTV.framework */,
+				F6D918AB3A4AFDE0E29094017E26D6C4 /* Pods_LiveTVTests.framework */,
+				A02435E682AB499DFC77E3E989214C65 /* Pods_LiveTVUITests.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		E47B28ECAF8D5159FFFCA170D8D13E7B /* Pods-LiveTV */ = {
@@ -187,11 +345,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		BA9B399CDDFA1B3DA20969B76DD42116 /* Headers */ = {
+		7050D0AE55B443C3296D350C11B0B56F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA420EEE2D08331A355DDCD47B485682 /* Pods-LiveTV-umbrella.h in Headers */,
+				4535380B656590BC7CA3229C3083C421 /* Cuckoo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,26 +369,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDEB232C62D4DA5AE40C169EFB708CF8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BCFFA541874E7FBB2B41F76C49CF25 /* Pods-LiveTV-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1F355C4A6825C686798F5ABEA7A8903B /* Pods-LiveTV */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 68CC8D09539FF63D66968E8E3B44B34F /* Build configuration list for PBXNativeTarget "Pods-LiveTV" */;
-			buildPhases = (
-				B7F1FD1D22F0B59249CF947A6E2C5C13 /* Sources */,
-				66D94D8685DF23DD2EB8434E668DAF4A /* Frameworks */,
-				BA9B399CDDFA1B3DA20969B76DD42116 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-LiveTV";
-			productName = "Pods-LiveTV";
-			productReference = F4701B9A8401D4381E6B89752247934C /* Pods_LiveTV.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		40E211D1A2AE42C33B5C630F61E0EEAA /* Pods-LiveTVUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53F35626F7A09B0560D80290E5A12690 /* Build configuration list for PBXNativeTarget "Pods-LiveTVUITests" */;
@@ -245,7 +394,7 @@
 			);
 			name = "Pods-LiveTVUITests";
 			productName = "Pods-LiveTVUITests";
-			productReference = 7C32098EC59FD23C77B8EE2AFB39DE92 /* Pods_LiveTVUITests.framework */;
+			productReference = A02435E682AB499DFC77E3E989214C65 /* Pods_LiveTVUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		434C82336EB747EB85D0DF067986B451 /* Pods-LiveTVTests */ = {
@@ -262,7 +411,42 @@
 			);
 			name = "Pods-LiveTVTests";
 			productName = "Pods-LiveTVTests";
-			productReference = E20ED4B1C16FC8339743DD0C3E2D0855 /* Pods_LiveTVTests.framework */;
+			productReference = F6D918AB3A4AFDE0E29094017E26D6C4 /* Pods_LiveTVTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4D275F856FD25D5D35D348FFDD8B1242 /* Cuckoo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20697CEBDA4CC8EE116D3D3885AC8663 /* Build configuration list for PBXNativeTarget "Cuckoo" */;
+			buildPhases = (
+				44B0677EDF9A2A1DE7FB8369E368B418 /* Sources */,
+				31BA3153BB118CAFE3BDFE57C9F0A38B /* Frameworks */,
+				7050D0AE55B443C3296D350C11B0B56F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cuckoo;
+			productName = Cuckoo;
+			productReference = 3514003B1847A046610963A59A78DAAE /* Cuckoo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		89D5E2C4971D5EE21B0C2E9ABE569A50 /* Pods-LiveTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E8C9707FBFB728EAC8DB52D994B76B5 /* Build configuration list for PBXNativeTarget "Pods-LiveTV" */;
+			buildPhases = (
+				FD92FB6D082A1AC1D6E4837218BA336E /* Sources */,
+				020CBB724E590EBB703543BFBFA8B781 /* Frameworks */,
+				EDEB232C62D4DA5AE40C169EFB708CF8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F621407951E11D03842DBA7B4D990470 /* PBXTargetDependency */,
+			);
+			name = "Pods-LiveTV";
+			productName = "Pods-LiveTV";
+			productReference = E44297E468ED8FA1CD644389D83AD655 /* Pods_LiveTV.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -282,11 +466,12 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 84872DEA8F3CE0E8E269C8CE496FE453 /* Products */;
+			productRefGroup = D4B2186D94CFDC661910E17AB15C5A91 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F355C4A6825C686798F5ABEA7A8903B /* Pods-LiveTV */,
+				4D275F856FD25D5D35D348FFDD8B1242 /* Cuckoo */,
+				89D5E2C4971D5EE21B0C2E9ABE569A50 /* Pods-LiveTV */,
 				434C82336EB747EB85D0DF067986B451 /* Pods-LiveTVTests */,
 				40E211D1A2AE42C33B5C630F61E0EEAA /* Pods-LiveTVUITests */,
 			);
@@ -294,6 +479,45 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		44B0677EDF9A2A1DE7FB8369E368B418 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD28C7912D6E360E887CEE31F33151BB /* __DoNotUse.swift in Sources */,
+				D1D276ECB43AACD564333536BE426557 /* ArgumentCaptor.swift in Sources */,
+				37031FD41B324738CA58BCDA3E412787 /* BaseStubFunctionTrait.swift in Sources */,
+				16EE718124B48BF6CE0F88895AC82AC5 /* CallMatcher.swift in Sources */,
+				F918CE5727AAEE587FD4E70B79FCF567 /* CallMatcherFunctions.swift in Sources */,
+				BEA7636272F79D374DD586649A2FB45B /* Cuckoo-dummy.m in Sources */,
+				47F111FBEC16A26D083DD88F9BA6B5E0 /* CuckooFunctions.swift in Sources */,
+				B376BBBB09D53083B558B04EF9C0DF46 /* DefaultValueRegistry.swift in Sources */,
+				F25360FC373749AC0F8FF6D5C1B191FD /* Matchable.swift in Sources */,
+				F22C654A3DEC2CEC12D8E175D1140E85 /* Mock.swift in Sources */,
+				B52CBED01FE1529E0A1612A3CEE0B93D /* MockManager.swift in Sources */,
+				92520A52CBE77FE2467790F20807A198 /* ParameterMatcher.swift in Sources */,
+				D7567346E9BDF3B17EBCFE65BCB3764B /* ParameterMatcherFunctions.swift in Sources */,
+				216BF678EFAFAACCF8172E207B58A44A /* Stub.swift in Sources */,
+				0FD1B977D151CF7BD8F6E71917F316D8 /* StubAction.swift in Sources */,
+				BA8DCFAA89DB7F9566A92A8B7E517EB6 /* StubbingProxy.swift in Sources */,
+				E7294F60ACBB72A657D0A4E4BEDE0490 /* StubCall.swift in Sources */,
+				699D21C734212C08961FE408E89AE0C3 /* StubFunction.swift in Sources */,
+				34815D8F03D5BD45820DB904E3FDAD63 /* StubFunctionThenCallRealImplementationTrait.swift in Sources */,
+				FD034541830DA7A15C83681630894CEC /* StubFunctionThenDoNothingTrait.swift in Sources */,
+				7E8B7AC9A57864FA93AC6B490E46E2BD /* StubFunctionThenReturnTrait.swift in Sources */,
+				7698C16BB3224169A750648787104110 /* StubFunctionThenThrowTrait.swift in Sources */,
+				82E1F896B486D437E04EFDAF3134E02C /* StubFunctionThenTrait.swift in Sources */,
+				1D72DF43E81460E9D75DB6AA50A2FD42 /* StubNoReturnFunction.swift in Sources */,
+				DE34E4F9830DF781B071D95209426559 /* StubNoReturnThrowingFunction.swift in Sources */,
+				27C96D7523844010858874BD6476F2FC /* StubThrowingFunction.swift in Sources */,
+				88BBCC866C0AD237E41E5E252661D4E0 /* ToBeStubbedProperty.swift in Sources */,
+				129E73EA5EC7FBD6751A4CB436D3C93C /* ToBeStubbedReadOnlyProperty.swift in Sources */,
+				5B96232898A102F4A1514CC3E3F3B999 /* Utils.swift in Sources */,
+				13593BC194FD5F44F8E393FC79457CFD /* VerificationProxy.swift in Sources */,
+				148557F1CCB9E51E2C5EAA59F9A994A9 /* VerifyProperty.swift in Sources */,
+				BE877915D67DE78341C624B8F658C7E8 /* VerifyReadOnlyProperty.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6643066F11157C89FBFB95B04F9F3336 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,15 +534,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7F1FD1D22F0B59249CF947A6E2C5C13 /* Sources */ = {
+		FD92FB6D082A1AC1D6E4837218BA336E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				340554F5C205A85737AC34B9F305A3E2 /* Pods-LiveTV-dummy.m in Sources */,
+				63A7B46CC948B8A9FD817118FB8E44BA /* Pods-LiveTV-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F621407951E11D03842DBA7B4D990470 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cuckoo;
+			target = 4D275F856FD25D5D35D348FFDD8B1242 /* Cuckoo */;
+			targetProxy = 3CD26FFD0C1DD96BD3EAFCAA380C294F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		05171B7EA324A15EC24026237D6295B6 /* Debug */ = {
@@ -350,6 +583,42 @@
 				PRODUCT_NAME = Pods_LiveTVUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		05EFE333479B53932346762276853784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F1FC6DAF7A64E1C9CF42C94A3413D8 /* Pods-LiveTV.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LiveTV/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiveTV/Pods-LiveTV.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LiveTV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -435,6 +704,41 @@
 			};
 			name = Debug;
 		};
+		6F38ADA30FAEBC0F3ED564E295DBFF25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1414A59855B7AB571B166FA39C4BC79B /* Pods-LiveTV.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LiveTV/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiveTV/Pods-LiveTV.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LiveTV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		7057257EB2909CD7102AE02C93853FBF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C10B471DD2FBA498008CE755AC13D0A0 /* Pods-LiveTVTests.release.xcconfig */;
@@ -470,40 +774,38 @@
 			};
 			name = Release;
 		};
-		99853337BA6008624155EC406478720C /* Release */ = {
+		7332B0A009F216AEA9436B693FC1255C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1414A59855B7AB571B166FA39C4BC79B /* Pods-LiveTV.release.xcconfig */;
+			baseConfigurationReference = 9E456F84976E3357603FA44F086978BC /* Cuckoo.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-LiveTV/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Cuckoo/Cuckoo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cuckoo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LiveTV/Pods-LiveTV.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LiveTV;
+				MODULEMAP_FILE = "Target Support Files/Cuckoo/Cuckoo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Cuckoo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -545,40 +847,37 @@
 			};
 			name = Release;
 		};
-		C63AACF06FBD821C8AE468F19B109055 /* Debug */ = {
+		DA5C38BE195E40726BCF06B4918F27F2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47F1FC6DAF7A64E1C9CF42C94A3413D8 /* Pods-LiveTV.debug.xcconfig */;
+			baseConfigurationReference = 9E456F84976E3357603FA44F086978BC /* Cuckoo.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-LiveTV/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Cuckoo/Cuckoo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cuckoo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LiveTV/Pods-LiveTV.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LiveTV;
+				MODULEMAP_FILE = "Target Support Files/Cuckoo/Cuckoo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Cuckoo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		F00CA7E8E0E28CC5B898D5B5A7FB46C7 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -618,6 +917,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		20697CEBDA4CC8EE116D3D3885AC8663 /* Build configuration list for PBXNativeTarget "Cuckoo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7332B0A009F216AEA9436B693FC1255C /* Debug */,
+				DA5C38BE195E40726BCF06B4918F27F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -627,20 +935,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2E8C9707FBFB728EAC8DB52D994B76B5 /* Build configuration list for PBXNativeTarget "Pods-LiveTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05EFE333479B53932346762276853784 /* Debug */,
+				6F38ADA30FAEBC0F3ED564E295DBFF25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		53F35626F7A09B0560D80290E5A12690 /* Build configuration list for PBXNativeTarget "Pods-LiveTVUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05171B7EA324A15EC24026237D6295B6 /* Debug */,
 				F00CA7E8E0E28CC5B898D5B5A7FB46C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		68CC8D09539FF63D66968E8E3B44B34F /* Build configuration list for PBXNativeTarget "Pods-LiveTV" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C63AACF06FBD821C8AE468F19B109055 /* Debug */,
-				99853337BA6008624155EC406478720C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

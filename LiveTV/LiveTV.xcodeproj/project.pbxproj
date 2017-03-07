@@ -27,6 +27,7 @@
 		BB99FEED1E6D95B1006BAA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEEB1E6D95B1006BAA01 /* LaunchScreen.storyboard */; };
 		BB99FEF81E6D95B1006BAA01 /* LiveTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99FEF71E6D95B1006BAA01 /* LiveTVTests.swift */; };
 		BB99FF031E6D95B2006BAA01 /* LiveTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99FF021E6D95B2006BAA01 /* LiveTVUITests.swift */; };
+		BBEAD5A41E6EDB070056D033 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEAD5A31E6EDB070056D033 /* GeneratedMocks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		BB99FEFE1E6D95B2006BAA01 /* LiveTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB99FF021E6D95B2006BAA01 /* LiveTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTVUITests.swift; sourceTree = "<group>"; };
 		BB99FF041E6D95B2006BAA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBEAD5A31E6EDB070056D033 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		CE8C66C6D7B748358C59FDAE /* Pods_LiveTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA59C3CA3375E79D415E9C70 /* Pods-LiveTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveTV/Pods-LiveTV.debug.xcconfig"; sourceTree = "<group>"; };
 		E582ECB0A2114ACD91AEC209 /* Pods_LiveTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +167,7 @@
 		BB3DDEA61E6DA39C00E2CDB1 /* LiveChannelsList */ = {
 			isa = PBXGroup;
 			children = (
+				BBEAD5A31E6EDB070056D033 /* GeneratedMocks.swift */,
 				BB3DDE9E1E6DA39800E2CDB1 /* LiveChannelsInteractorTests.swift */,
 				BB3DDE9F1E6DA39800E2CDB1 /* LiveChannelsPresenterTests.swift */,
 				BB3DDEA01E6DA39800E2CDB1 /* LiveChannelsViewControllerTests.swift */,
@@ -257,6 +260,7 @@
 				BB3DDEA91E6DB50300E2CDB1 /* ShellScript */,
 				FC5D55EC0614989DA06D206A /* [CP] Embed Pods Frameworks */,
 				C25850EB7030719985C5B098 /* [CP] Copy Pods Resources */,
+				BBEAD5A11E6ED9CF0056D033 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -502,6 +506,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/swiftformat\" \"${SRCROOT}/LiveTVUITests\"";
 		};
+		BBEAD5A11E6ED9CF0056D033 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n#OUTPUT_FILE=\"$PROJECT_DIR/Tests/GeneratedMocks.swift\"\n#echo \"Generated Mocks File = $OUTPUT_FILE\"\n\n#INPUT_DIR=\"$PROJECT_DIR\"\n#echo \"Mocks Input Directory = $INPUT_DIR\"\n\n#${PODS_ROOT}/Cuckoo/run generate --testable \"$PROJECT_NAME\" \\\n#--output \"${OUTPUT_FILE}\" \\\n#\"$INPUT_DIR/LiveTV/Scenes/LiveChannelsList/LiveChannelsService.swift\" \\";
+		};
 		BD5FE488432A84EC2ACD9114 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -589,6 +606,7 @@
 				BB99FEF81E6D95B1006BAA01 /* LiveTVTests.swift in Sources */,
 				BB3DDEA41E6DA39800E2CDB1 /* LiveChannelsViewControllerTests.swift in Sources */,
 				BB3DDEA31E6DA39800E2CDB1 /* LiveChannelsPresenterTests.swift in Sources */,
+				BBEAD5A41E6EDB070056D033 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
