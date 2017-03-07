@@ -19,10 +19,14 @@ protocol LiveChannelsViewControllerOutput {
     func perform(request: LiveChannels.Load.Request)
 }
 
-class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerInput {
+let channelCollectionCellId = "channelCollectionCellIdentifier"
+
+class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerInput, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     var output: LiveChannelsViewControllerOutput!
     var router: LiveChannelsRouter!
 
+    var viewModel: LiveChannels.Load.ViewModel = LiveChannels.Load.ViewModel(liveChannelsViewModels: [])
+    @IBOutlet weak var collectionView: UICollectionView!
     // MARK: - Object lifecycle
 
     override func awakeFromNib() {
@@ -35,7 +39,12 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        collectionViewSetup()
         doSomethingOnLoad()
+    }
+
+    func collectionViewSetup() {
+        self.collectionView.register(UINib(nibName: "ChannelCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: channelCollectionCellId)
     }
 
     // MARK: - Event handling
@@ -47,7 +56,21 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
 
     // MARK: - Display logic
 
-    func displaySomething(viewModel _: LiveChannels.Load.ViewModel) {
-        // NOTE: Display the result from the Presenter
+    func displaySomething(viewModel: LiveChannels.Load.ViewModel) {
+        self.viewModel = viewModel
+        self.collectionView.reloadData()
+    }
+
+    // MARK: - Collection view data source
+    func collectionView(_: UICollectionView, numberOfItemsInSection _: Int) -> Int {
+        return self.viewModel.liveChannelsViewModels.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: channelCollectionCellId, for: indexPath) as! ChannelCollectionViewCell
+        let model = self.viewModel.liveChannelsViewModels[indexPath.row]
+        cell.configure(with: model)
+
+        return cell
     }
 }

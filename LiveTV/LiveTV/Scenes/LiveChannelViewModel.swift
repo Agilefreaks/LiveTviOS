@@ -31,7 +31,7 @@ class LiveChannelViewModel {
     var streamingURLString: String {
         return liveChannel.streamingUrl ?? ""
     }
-    
+
     var imagePlaceholderName: String {
         return "missingVideo"
     }

@@ -26,6 +26,7 @@
 		BB5933531E6EE06B00149A92 /* ChannelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5933511E6EE06B00149A92 /* ChannelCollectionViewCell.xib */; };
 		BB5933561E6EE2B200149A92 /* LiveChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5933551E6EE2B200149A92 /* LiveChannel.swift */; };
 		BB5933581E6EE2D300149A92 /* LiveChannelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5933571E6EE2D300149A92 /* LiveChannelViewModel.swift */; };
+		BB59335B1E6EE8FB00149A92 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB59335A1E6EE8FB00149A92 /* UIView+Helpers.swift */; };
 		BB99FEE81E6D95B1006BAA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEE61E6D95B1006BAA01 /* Main.storyboard */; };
 		BB99FEEA1E6D95B1006BAA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEE91E6D95B1006BAA01 /* Assets.xcassets */; };
 		BB99FEED1E6D95B1006BAA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEEB1E6D95B1006BAA01 /* LaunchScreen.storyboard */; };
@@ -74,6 +75,7 @@
 		BB5933511E6EE06B00149A92 /* ChannelCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelCollectionViewCell.xib; sourceTree = "<group>"; };
 		BB5933551E6EE2B200149A92 /* LiveChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannel.swift; sourceTree = "<group>"; };
 		BB5933571E6EE2D300149A92 /* LiveChannelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelViewModel.swift; sourceTree = "<group>"; };
+		BB59335A1E6EE8FB00149A92 /* UIView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
 		BB99FEDF1E6D95B1006BAA01 /* LiveTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB99FEE71E6D95B1006BAA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB99FEE91E6D95B1006BAA01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		BB3DDEAC1E6DB9D200E2CDB1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				BB5933591E6EE8FB00149A92 /* Extensions */,
 				BB3DDEAD1E6DB9D200E2CDB1 /* Protocols */,
 			);
 			path = Utils;
@@ -209,6 +212,14 @@
 				BB5933571E6EE2D300149A92 /* LiveChannelViewModel.swift */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		BB5933591E6EE8FB00149A92 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB59335A1E6EE8FB00149A92 /* UIView+Helpers.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BB99FED61E6D95B1006BAA01 = {
@@ -616,6 +627,7 @@
 				BB5933521E6EE06B00149A92 /* ChannelCollectionViewCell.swift in Sources */,
 				BB3DDE9B1E6D9C2A00E2CDB1 /* LiveChannelsRouter.swift in Sources */,
 				BB3DDE981E6D9C2A00E2CDB1 /* LiveChannelsInteractor.swift in Sources */,
+				BB59335B1E6EE8FB00149A92 /* UIView+Helpers.swift in Sources */,
 				BB3DDE8F1E6D9BA800E2CDB1 /* AppDelegate.swift in Sources */,
 				BB3DDEAF1E6DB9FC00E2CDB1 /* Injectable.swift in Sources */,
 				BB3DDE991E6D9C2A00E2CDB1 /* LiveChannelsModels.swift in Sources */,

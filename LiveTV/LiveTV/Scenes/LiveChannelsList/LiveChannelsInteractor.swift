@@ -29,7 +29,7 @@ class LiveChannelsInteractor: LiveChannelsInteractorInput, Injectable {
     // MARK: - Business logic
 
     public func perform(request _: LiveChannels.Load.Request) {
-        //        assertDependencies()
+        assertDependencies()
 
         entityService.getLiveChannelsList(success: { [weak self] channelsList in
             guard let strongSelf = self else { return }

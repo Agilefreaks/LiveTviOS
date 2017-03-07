@@ -17,22 +17,19 @@
                 <rect key="frame" x="0.0" y="0.0" width="144" height="178"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="missingVideo" translatesAutoresizingMaskIntoConstraints="NO" id="JXP-rK-9K8">
-                        <rect key="frame" x="0.0" y="0.0" width="144" height="121"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="missingVideo" translatesAutoresizingMaskIntoConstraints="NO" id="JXP-rK-9K8">
+                        <rect key="frame" x="0.0" y="0.0" width="144" height="122"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="epix" translatesAutoresizingMaskIntoConstraints="NO" id="3Uh-PL-Xh9">
-                        <rect key="frame" x="8" y="91" width="43" height="22"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="22" id="2AA-FK-FpK"/>
-                            <constraint firstAttribute="width" constant="43" id="WZ5-P6-h9U"/>
-                        </constraints>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="epix" translatesAutoresizingMaskIntoConstraints="NO" id="3Uh-PL-Xh9">
+                        <rect key="frame" x="8" y="61" width="43" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoolander 2: The Magnum Edition" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkX-VC-2EX">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoolander 2: The Magnum Edition" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkX-VC-2EX">
                         <rect key="frame" x="8" y="130" width="128" height="42"/>
                         <color key="backgroundColor" red="0.25488662719999999" green="0.2549125552" blue="0.25486493110000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="42" id="qnz-3o-72j"/>
+                            <constraint firstAttribute="height" constant="42" id="mG6-BK-jb3"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                         <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -42,15 +39,13 @@
             </view>
             <color key="backgroundColor" red="0.25488662719726562" green="0.25491255521774292" blue="0.25486493110656738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="hkX-VC-2EX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="3JI-Jp-sEB"/>
-                <constraint firstItem="hkX-VC-2EX" firstAttribute="top" secondItem="JXP-rK-9K8" secondAttribute="bottom" constant="9" id="6Za-wn-Zbu"/>
-                <constraint firstItem="3Uh-PL-Xh9" firstAttribute="bottom" secondItem="JXP-rK-9K8" secondAttribute="bottom" constant="-8" id="ANs-7A-1LN"/>
-                <constraint firstItem="3Uh-PL-Xh9" firstAttribute="leading" secondItem="JXP-rK-9K8" secondAttribute="leading" constant="8" id="HRF-rS-iT7"/>
-                <constraint firstAttribute="bottom" secondItem="hkX-VC-2EX" secondAttribute="bottom" constant="6" id="QNh-4g-GNY"/>
-                <constraint firstAttribute="trailing" secondItem="hkX-VC-2EX" secondAttribute="trailing" constant="8" id="Ryn-3I-VWi"/>
-                <constraint firstAttribute="trailing" secondItem="JXP-rK-9K8" secondAttribute="trailing" id="ZO6-F7-qlB"/>
-                <constraint firstItem="JXP-rK-9K8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dmm-wI-GRt"/>
-                <constraint firstItem="JXP-rK-9K8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mGf-rQ-IPi"/>
+                <constraint firstItem="JXP-rK-9K8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="I12-pz-eDY"/>
+                <constraint firstAttribute="trailing" secondItem="hkX-VC-2EX" secondAttribute="trailing" constant="8" id="NCh-Uk-Uo7"/>
+                <constraint firstAttribute="bottom" secondItem="hkX-VC-2EX" secondAttribute="bottom" constant="6" id="U6f-yK-dTH"/>
+                <constraint firstItem="hkX-VC-2EX" firstAttribute="top" secondItem="JXP-rK-9K8" secondAttribute="bottom" constant="8" id="ZMJ-lR-aL2"/>
+                <constraint firstAttribute="trailing" secondItem="JXP-rK-9K8" secondAttribute="trailing" id="ecg-Tg-tlS"/>
+                <constraint firstItem="JXP-rK-9K8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mQ0-HF-XRc"/>
+                <constraint firstItem="hkX-VC-2EX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="upa-bE-Tzh"/>
             </constraints>
             <size key="customSize" width="144" height="178"/>
             <connections>
