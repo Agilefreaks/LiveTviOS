@@ -21,7 +21,7 @@ protocol LiveChannelsViewControllerOutput {
 
 let channelCollectionCellId = "channelCollectionCellIdentifier"
 
-class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerInput, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerInput, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     var output: LiveChannelsViewControllerOutput!
     var router: LiveChannelsRouter!
 
@@ -72,5 +72,13 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
         cell.configure(with: model)
 
         return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView,
+                        layout _: UICollectionViewLayout,
+                        sizeForItemAt _: IndexPath) -> CGSize {
+        let width = (collectionView.width - 30) / 2
+        let size = CGSize(width: width, height: collectionView.height)
+        return size
     }
 }

@@ -102,6 +102,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="3Do-kl-H4B" id="Qdl-oq-PAR"/>
+                                    <outlet property="delegate" destination="3Do-kl-H4B" id="v9u-DJ-qYV"/>
                                 </connections>
                             </collectionView>
                         </subviews>
