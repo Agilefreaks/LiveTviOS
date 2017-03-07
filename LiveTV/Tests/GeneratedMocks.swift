@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: LiveTV/Scenes/LiveChannelsList/LiveChannelsService.swift at 2017-03-07 12:15:35 +0000
+// MARK: - Mocks generated from file: LiveTV/Scenes/LiveChannelsList/LiveChannelsService.swift at 2017-03-07 14:32:56 +0000
 
 //
 //  LiveChannelsService.swift
@@ -82,8 +82,8 @@ class MockLiveChannelsService: LiveChannelsService, Cuckoo.Mock {
         return self
     }
     
-    override func getLiveChannelsList(success: @escaping ([LiveChannel]) -> Void, failure name not set: @escaping (Error) -> Void) {
-        return manager.call("getLiveChannelsList(success: @escaping ([LiveChannel]) -> Void, failure: @escaping (Error) -> Void)", parameters: (success, name not set), original: observed.map { o in return { (success: @escaping ([LiveChannel]) -> Void, name not set: @escaping (Error) -> Void) in o.getLiveChannelsList(success: success, failure: name not set) } })
+    override func getLiveChannelsList(success: @escaping ([LiveChannel]) -> Void, failure: @escaping (Error) -> Void) {
+        return manager.call("getLiveChannelsList(success: @escaping ([LiveChannel]) -> Void, failure: @escaping (Error) -> Void)", parameters: (success, failure), original: observed.map { o in return { (success: @escaping ([LiveChannel]) -> Void, failure: @escaping (Error) -> Void) in o.getLiveChannelsList(success: success, failure: failure) } })
     }
     
     struct __StubbingProxy_LiveChannelsService: Cuckoo.StubbingProxy {
@@ -93,8 +93,8 @@ class MockLiveChannelsService: LiveChannelsService, Cuckoo.Mock {
             self.manager = manager
         }
         
-        func getLiveChannelsList<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(success: M1, failure name not set: M2) -> Cuckoo.StubNoReturnFunction<(([LiveChannel]) -> Void, (Error) -> Void)> where M1.MatchedType == ([LiveChannel]) -> Void, M2.MatchedType == (Error) -> Void {
-            let matchers: [Cuckoo.ParameterMatcher<(([LiveChannel]) -> Void, (Error) -> Void)>] = [wrap(matchable: success) { $0.0 }, wrap(matchable: name not set) { $0.1 }]
+        func getLiveChannelsList<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(success: M1, failure: M2) -> Cuckoo.StubNoReturnFunction<(([LiveChannel]) -> Void, (Error) -> Void)> where M1.MatchedType == ([LiveChannel]) -> Void, M2.MatchedType == (Error) -> Void {
+            let matchers: [Cuckoo.ParameterMatcher<(([LiveChannel]) -> Void, (Error) -> Void)>] = [wrap(matchable: success) { $0.0 }, wrap(matchable: failure) { $0.1 }]
             return Cuckoo.StubNoReturnFunction(stub: manager.createStub("getLiveChannelsList(success: @escaping ([LiveChannel]) -> Void, failure: @escaping (Error) -> Void)", parameterMatchers: matchers))
         }
     }
@@ -111,8 +111,8 @@ class MockLiveChannelsService: LiveChannelsService, Cuckoo.Mock {
         }
         
         @discardableResult
-        func getLiveChannelsList<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(success: M1, failure name not set: M2) -> Cuckoo.__DoNotUse<Void> where M1.MatchedType == ([LiveChannel]) -> Void, M2.MatchedType == (Error) -> Void {
-            let matchers: [Cuckoo.ParameterMatcher<(([LiveChannel]) -> Void, (Error) -> Void)>] = [wrap(matchable: success) { $0.0 }, wrap(matchable: name not set) { $0.1 }]
+        func getLiveChannelsList<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(success: M1, failure: M2) -> Cuckoo.__DoNotUse<Void> where M1.MatchedType == ([LiveChannel]) -> Void, M2.MatchedType == (Error) -> Void {
+            let matchers: [Cuckoo.ParameterMatcher<(([LiveChannel]) -> Void, (Error) -> Void)>] = [wrap(matchable: success) { $0.0 }, wrap(matchable: failure) { $0.1 }]
             return manager.verify("getLiveChannelsList(success: @escaping ([LiveChannel]) -> Void, failure: @escaping (Error) -> Void)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
         }
     }
@@ -120,7 +120,7 @@ class MockLiveChannelsService: LiveChannelsService, Cuckoo.Mock {
 
 class LiveChannelsServiceStub: LiveChannelsService {
     
-    override func getLiveChannelsList(success: @escaping ([LiveChannel]) -> Void, failure name not set: @escaping (Error) -> Void) {
+    override func getLiveChannelsList(success: @escaping ([LiveChannel]) -> Void, failure: @escaping (Error) -> Void) {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
 }

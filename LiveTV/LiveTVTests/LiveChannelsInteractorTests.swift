@@ -19,7 +19,8 @@ class LiveChannelsInteractorTests: XCTestCase {
     var sut: LiveChannelsInteractor!
     let request = LiveChannels.Load.Request()
     let output = LiveChannelsInteractorOutputSpy()
-    let service = LiveChannelsServiceSpy()
+
+    let mock = MockLiveChannelsService()
 
     // MARK: - Test lifecycle
 
@@ -27,7 +28,17 @@ class LiveChannelsInteractorTests: XCTestCase {
         super.setUp()
         setupLiveChannelsInteractor()
 
-        sut.inject(service)
+        stub(mock) { mock in
+            when(mock.getLiveChannelsList(success: anyClosure(), failure: anyClosure())).then({ successClosure, _ in
+                let data = LiveChannel(name: "test", logoUrl: "test", streamingUrl: "test", title: "test")
+                successClosure([data])
+            }).then({ successClosure2, _ in
+                let data = LiveChannel(name: "test", logoUrl: "test", streamingUrl: "test", title: "test")
+                successClosure2([data, data])
+            })
+        }
+
+        sut.inject(mock)
         sut.output = output
     }
 
@@ -50,13 +61,6 @@ class LiveChannelsInteractorTests: XCTestCase {
         func presentSomething(response: LiveChannels.Load.Response) {
             presentLoadResponseCalled = true
             outputSpy = response
-        }
-    }
-
-    class LiveChannelsServiceSpy: ListChannelsServiceProtocol {
-        func getLiveChannelsList(success: @escaping ([LiveChannel]) -> Void, failure _: @escaping (Error) -> Void) {
-            let data = LiveChannel(name: "test", logoUrl: "test", streamingUrl: "test", title: "test")
-            success([data])
         }
     }
 
