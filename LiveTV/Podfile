@@ -4,10 +4,12 @@ target 'LiveTV' do
   use_frameworks!
 
   # Pods for LiveTV
-  #pod 'Cuckoo'
+  
 
   target 'LiveTVTests' do
     inherit! :search_paths
+    
+    pod 'Cuckoo'
     # Pods for testing
   end
 
