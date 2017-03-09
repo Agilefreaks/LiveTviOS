@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E163f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s84-Ru-944">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="265"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="x95-x7-FdN"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="RSO-YZ-tDz" kind="embed" id="h5k-HS-cIm"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYa-iX-5aj">
+                                <rect key="frame" x="0.0" y="283" width="320" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="fg0-xF-mYy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="channelsViewController"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="3Do-kl-H4B" kind="embed" id="fHV-xK-8ZJ"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IYa-iX-5aj" firstAttribute="top" secondItem="s84-Ru-944" secondAttribute="bottom" constant="18" id="Jnw-T5-goW"/>
+                            <constraint firstAttribute="trailing" secondItem="IYa-iX-5aj" secondAttribute="trailing" id="MaB-9Q-JX1"/>
+                            <constraint firstAttribute="trailing" secondItem="s84-Ru-944" secondAttribute="trailing" id="OJ5-Ml-bYq"/>
+                            <constraint firstItem="IYa-iX-5aj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QgY-JI-2TM"/>
+                            <constraint firstItem="s84-Ru-944" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eEp-Qn-JGi"/>
+                            <constraint firstItem="s84-Ru-944" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hga-ji-7xw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.200000000000003" y="-158.77061469265368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="01d-NI-DXs">
+            <objects>
+                <viewController id="RSO-YZ-tDz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7uN-mp-opa"/>
+                        <viewControllerLayoutGuide type="bottom" id="o6u-oO-ZcZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NBq-6f-Zrt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="265"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BCp-ht-zlq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1615" y="-313"/>
+        </scene>
+        <!--Live Channels View Controller-->
+        <scene sceneID="AHc-aG-aX4">
+            <objects>
+                <viewController storyboardIdentifier="LiveChannelsViewController" id="3Do-kl-H4B" customClass="LiveChannelsViewController" customModule="LiveTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uN5-mn-jHo"/>
+                        <viewControllerLayoutGuide type="bottom" id="fAm-gm-EOJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jlh-2O-IUG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="o6I-JO-l86">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                                <color key="backgroundColor" red="0.25488662719999999" green="0.2549125552" blue="0.25486493110000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="2" id="vmF-re-4qq">
+                                    <size key="itemSize" width="200" height="170"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="channelsCollectionView"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3Do-kl-H4B" id="Qdl-oq-PAR"/>
+                                    <outlet property="delegate" destination="3Do-kl-H4B" id="v9u-DJ-qYV"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="o6I-JO-l86" secondAttribute="trailing" id="3gS-jT-tTv"/>
+                            <constraint firstAttribute="bottom" secondItem="o6I-JO-l86" secondAttribute="bottom" id="mHX-0g-Vod"/>
+                            <constraint firstItem="o6I-JO-l86" firstAttribute="top" secondItem="uN5-mn-jHo" secondAttribute="bottom" id="pHn-Jw-lTN"/>
+                            <constraint firstItem="o6I-JO-l86" firstAttribute="leading" secondItem="Jlh-2O-IUG" secondAttribute="leading" id="q0a-tN-arf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="o6I-JO-l86" id="dYn-VY-1ut"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9WO-s7-eiD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1612.5" y="1.056338028169014"/>
+        </scene>
+    </scenes>
+</document>

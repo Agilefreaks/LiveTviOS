@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2175377DB0CEAC3E4B06505B /* Pods_LiveTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E582ECB0A2114ACD91AEC209 /* Pods_LiveTV.framework */; };
+		64AEDFA9E3A72E81B4BD5787 /* Pods_LiveTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8C66C6D7B748358C59FDAE /* Pods_LiveTVUITests.framework */; };
+		7BF814D7E2A3C0FAF7A86034 /* Pods_LiveTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5695DDFF56F45BBE7DEFE5FA /* Pods_LiveTVTests.framework */; };
+		BB3DDE8F1E6D9BA800E2CDB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE8E1E6D9BA800E2CDB1 /* AppDelegate.swift */; };
+		BB3DDE971E6D9C2A00E2CDB1 /* LiveChannelsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE901E6D9C2A00E2CDB1 /* LiveChannelsConfigurator.swift */; };
+		BB3DDE981E6D9C2A00E2CDB1 /* LiveChannelsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE911E6D9C2A00E2CDB1 /* LiveChannelsInteractor.swift */; };
+		BB3DDE991E6D9C2A00E2CDB1 /* LiveChannelsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE921E6D9C2A00E2CDB1 /* LiveChannelsModels.swift */; };
+		BB3DDE9A1E6D9C2A00E2CDB1 /* LiveChannelsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE931E6D9C2A00E2CDB1 /* LiveChannelsPresenter.swift */; };
+		BB3DDE9B1E6D9C2A00E2CDB1 /* LiveChannelsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE941E6D9C2A00E2CDB1 /* LiveChannelsRouter.swift */; };
+		BB3DDE9C1E6D9C2A00E2CDB1 /* LiveChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE951E6D9C2A00E2CDB1 /* LiveChannelsViewController.swift */; };
+		BB3DDEA21E6DA39800E2CDB1 /* LiveChannelsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDE9E1E6DA39800E2CDB1 /* LiveChannelsInteractorTests.swift */; };
+		BB3DDEA81E6DA4F400E2CDB1 /* LiveChannelsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDEA71E6DA4F400E2CDB1 /* LiveChannelsService.swift */; };
+		BB3DDEAF1E6DB9FC00E2CDB1 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DDEAE1E6DB9FC00E2CDB1 /* Injectable.swift */; };
+		BB5933521E6EE06B00149A92 /* ChannelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5933501E6EE06B00149A92 /* ChannelCollectionViewCell.swift */; };
+		BB5933531E6EE06B00149A92 /* ChannelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5933511E6EE06B00149A92 /* ChannelCollectionViewCell.xib */; };
+		BB5933561E6EE2B200149A92 /* LiveChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5933551E6EE2B200149A92 /* LiveChannel.swift */; };
+		BB5933581E6EE2D300149A92 /* LiveChannelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5933571E6EE2D300149A92 /* LiveChannelViewModel.swift */; };
+		BB59335B1E6EE8FB00149A92 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB59335A1E6EE8FB00149A92 /* UIView+Helpers.swift */; };
+		BB5933611E6EFC1600149A92 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5933601E6EFC1600149A92 /* GeneratedMocks.swift */; };
+		BB99FEE81E6D95B1006BAA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEE61E6D95B1006BAA01 /* Main.storyboard */; };
+		BB99FEEA1E6D95B1006BAA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEE91E6D95B1006BAA01 /* Assets.xcassets */; };
+		BB99FEED1E6D95B1006BAA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEEB1E6D95B1006BAA01 /* LaunchScreen.storyboard */; };
+		BB99FF031E6D95B2006BAA01 /* LiveChannelsViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99FF021E6D95B2006BAA01 /* LiveChannelsViewControllerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB99FEF41E6D95B1006BAA01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB99FED71E6D95B1006BAA01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB99FEDE1E6D95B1006BAA01;
+			remoteInfo = LiveTV;
+		};
+		BB99FEFF1E6D95B2006BAA01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB99FED71E6D95B1006BAA01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB99FEDE1E6D95B1006BAA01;
+			remoteInfo = LiveTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27BC48748AF9CFE0588B752B /* Pods-LiveTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTVUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveTVUITests/Pods-LiveTVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		541490BF2478B02F1BDFD7A1 /* Pods-LiveTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveTV/Pods-LiveTV.release.xcconfig"; sourceTree = "<group>"; };
+		5695DDFF56F45BBE7DEFE5FA /* Pods_LiveTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A5FE5938DF008E0C0B5FF26 /* Pods-LiveTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveTVTests/Pods-LiveTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		A7BF1275F4E3EC6B64D1AD37 /* Pods-LiveTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveTVTests/Pods-LiveTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6FA917EAA5284E4BEAEFA2E /* Pods-LiveTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTVUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveTVUITests/Pods-LiveTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB3DDE8E1E6D9BA800E2CDB1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB3DDE901E6D9C2A00E2CDB1 /* LiveChannelsConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsConfigurator.swift; sourceTree = "<group>"; };
+		BB3DDE911E6D9C2A00E2CDB1 /* LiveChannelsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsInteractor.swift; sourceTree = "<group>"; };
+		BB3DDE921E6D9C2A00E2CDB1 /* LiveChannelsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsModels.swift; sourceTree = "<group>"; };
+		BB3DDE931E6D9C2A00E2CDB1 /* LiveChannelsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsPresenter.swift; sourceTree = "<group>"; };
+		BB3DDE941E6D9C2A00E2CDB1 /* LiveChannelsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsRouter.swift; sourceTree = "<group>"; };
+		BB3DDE951E6D9C2A00E2CDB1 /* LiveChannelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsViewController.swift; sourceTree = "<group>"; };
+		BB3DDE9E1E6DA39800E2CDB1 /* LiveChannelsInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsInteractorTests.swift; sourceTree = "<group>"; };
+		BB3DDEA71E6DA4F400E2CDB1 /* LiveChannelsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsService.swift; sourceTree = "<group>"; };
+		BB3DDEAE1E6DB9FC00E2CDB1 /* Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
+		BB5933501E6EE06B00149A92 /* ChannelCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelCollectionViewCell.swift; sourceTree = "<group>"; };
+		BB5933511E6EE06B00149A92 /* ChannelCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelCollectionViewCell.xib; sourceTree = "<group>"; };
+		BB5933551E6EE2B200149A92 /* LiveChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannel.swift; sourceTree = "<group>"; };
+		BB5933571E6EE2D300149A92 /* LiveChannelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelViewModel.swift; sourceTree = "<group>"; };
+		BB59335A1E6EE8FB00149A92 /* UIView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
+		BB5933601E6EFC1600149A92 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneratedMocks.swift; path = Tests/GeneratedMocks.swift; sourceTree = SOURCE_ROOT; };
+		BB99FEDF1E6D95B1006BAA01 /* LiveTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB99FEE71E6D95B1006BAA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB99FEE91E6D95B1006BAA01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB99FEEC1E6D95B1006BAA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB99FEEE1E6D95B1006BAA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB99FEF31E6D95B1006BAA01 /* LiveTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB99FEF91E6D95B2006BAA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB99FEFE1E6D95B2006BAA01 /* LiveTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB99FF021E6D95B2006BAA01 /* LiveChannelsViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveChannelsViewControllerUITests.swift; sourceTree = "<group>"; };
+		BB99FF041E6D95B2006BAA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8C66C6D7B748358C59FDAE /* Pods_LiveTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA59C3CA3375E79D415E9C70 /* Pods-LiveTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveTV/Pods-LiveTV.debug.xcconfig"; sourceTree = "<group>"; };
+		E582ECB0A2114ACD91AEC209 /* Pods_LiveTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB99FEDC1E6D95B1006BAA01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2175377DB0CEAC3E4B06505B /* Pods_LiveTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB99FEF01E6D95B1006BAA01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BF814D7E2A3C0FAF7A86034 /* Pods_LiveTVTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB99FEFB1E6D95B2006BAA01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64AEDFA9E3A72E81B4BD5787 /* Pods_LiveTVUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49BDA7E8006973EFE7B57AA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA59C3CA3375E79D415E9C70 /* Pods-LiveTV.debug.xcconfig */,
+				541490BF2478B02F1BDFD7A1 /* Pods-LiveTV.release.xcconfig */,
+				A7BF1275F4E3EC6B64D1AD37 /* Pods-LiveTVTests.debug.xcconfig */,
+				6A5FE5938DF008E0C0B5FF26 /* Pods-LiveTVTests.release.xcconfig */,
+				B6FA917EAA5284E4BEAEFA2E /* Pods-LiveTVUITests.debug.xcconfig */,
+				27BC48748AF9CFE0588B752B /* Pods-LiveTVUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75FD8B0B38E430FFC336C4A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E582ECB0A2114ACD91AEC209 /* Pods_LiveTV.framework */,
+				5695DDFF56F45BBE7DEFE5FA /* Pods_LiveTVTests.framework */,
+				CE8C66C6D7B748358C59FDAE /* Pods_LiveTVUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB3DDE8B1E6D9B9600E2CDB1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BB5933541E6EE29700149A92 /* Common */,
+				BB3DDE8C1E6D9B9600E2CDB1 /* LiveChannelsList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BB3DDE8C1E6D9B9600E2CDB1 /* LiveChannelsList */ = {
+			isa = PBXGroup;
+			children = (
+				BB3DDE901E6D9C2A00E2CDB1 /* LiveChannelsConfigurator.swift */,
+				BB3DDE911E6D9C2A00E2CDB1 /* LiveChannelsInteractor.swift */,
+				BB3DDE921E6D9C2A00E2CDB1 /* LiveChannelsModels.swift */,
+				BB3DDE931E6D9C2A00E2CDB1 /* LiveChannelsPresenter.swift */,
+				BB3DDE941E6D9C2A00E2CDB1 /* LiveChannelsRouter.swift */,
+				BB3DDE951E6D9C2A00E2CDB1 /* LiveChannelsViewController.swift */,
+				BB3DDEA71E6DA4F400E2CDB1 /* LiveChannelsService.swift */,
+				BB5933501E6EE06B00149A92 /* ChannelCollectionViewCell.swift */,
+				BB5933511E6EE06B00149A92 /* ChannelCollectionViewCell.xib */,
+			);
+			path = LiveChannelsList;
+			sourceTree = "<group>";
+		};
+		BB3DDE8D1E6D9BA800E2CDB1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BB3DDE8E1E6D9BA800E2CDB1 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BB3DDEA61E6DA39C00E2CDB1 /* LiveChannelsList */ = {
+			isa = PBXGroup;
+			children = (
+				BB5933601E6EFC1600149A92 /* GeneratedMocks.swift */,
+				BB3DDE9E1E6DA39800E2CDB1 /* LiveChannelsInteractorTests.swift */,
+			);
+			name = LiveChannelsList;
+			sourceTree = "<group>";
+		};
+		BB3DDEAC1E6DB9D200E2CDB1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BB5933591E6EE8FB00149A92 /* Extensions */,
+				BB3DDEAD1E6DB9D200E2CDB1 /* Protocols */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BB3DDEAD1E6DB9D200E2CDB1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BB3DDEAE1E6DB9FC00E2CDB1 /* Injectable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BB5933541E6EE29700149A92 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BB5933551E6EE2B200149A92 /* LiveChannel.swift */,
+				BB5933571E6EE2D300149A92 /* LiveChannelViewModel.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		BB5933591E6EE8FB00149A92 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB59335A1E6EE8FB00149A92 /* UIView+Helpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB99FED61E6D95B1006BAA01 = {
+			isa = PBXGroup;
+			children = (
+				BB99FEE11E6D95B1006BAA01 /* LiveTV */,
+				BB99FEF61E6D95B1006BAA01 /* LiveTVTests */,
+				BB99FF011E6D95B2006BAA01 /* LiveTVUITests */,
+				BB99FEE01E6D95B1006BAA01 /* Products */,
+				49BDA7E8006973EFE7B57AA8 /* Pods */,
+				75FD8B0B38E430FFC336C4A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB99FEE01E6D95B1006BAA01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB99FEDF1E6D95B1006BAA01 /* LiveTV.app */,
+				BB99FEF31E6D95B1006BAA01 /* LiveTVTests.xctest */,
+				BB99FEFE1E6D95B2006BAA01 /* LiveTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB99FEE11E6D95B1006BAA01 /* LiveTV */ = {
+			isa = PBXGroup;
+			children = (
+				BB3DDE8D1E6D9BA800E2CDB1 /* AppDelegate */,
+				BB3DDE8B1E6D9B9600E2CDB1 /* Scenes */,
+				BB3DDEAC1E6DB9D200E2CDB1 /* Utils */,
+				BB99FEE61E6D95B1006BAA01 /* Main.storyboard */,
+				BB99FEE91E6D95B1006BAA01 /* Assets.xcassets */,
+				BB99FEEB1E6D95B1006BAA01 /* LaunchScreen.storyboard */,
+				BB99FEEE1E6D95B1006BAA01 /* Info.plist */,
+			);
+			path = LiveTV;
+			sourceTree = "<group>";
+		};
+		BB99FEF61E6D95B1006BAA01 /* LiveTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB3DDEA61E6DA39C00E2CDB1 /* LiveChannelsList */,
+				BB99FEF91E6D95B2006BAA01 /* Info.plist */,
+			);
+			path = LiveTVTests;
+			sourceTree = "<group>";
+		};
+		BB99FF011E6D95B2006BAA01 /* LiveTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB99FF021E6D95B2006BAA01 /* LiveChannelsViewControllerUITests.swift */,
+				BB99FF041E6D95B2006BAA01 /* Info.plist */,
+			);
+			path = LiveTVUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB99FEDE1E6D95B1006BAA01 /* LiveTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB99FF071E6D95B2006BAA01 /* Build configuration list for PBXNativeTarget "LiveTV" */;
+			buildPhases = (
+				2DFDDB6ADF5007E77B22B1EB /* [CP] Check Pods Manifest.lock */,
+				BB99FEDB1E6D95B1006BAA01 /* Sources */,
+				BB99FEDC1E6D95B1006BAA01 /* Frameworks */,
+				BB99FEDD1E6D95B1006BAA01 /* Resources */,
+				BB3DDEA91E6DB50300E2CDB1 /* ShellScript */,
+				FC5D55EC0614989DA06D206A /* [CP] Embed Pods Frameworks */,
+				C25850EB7030719985C5B098 /* [CP] Copy Pods Resources */,
+				BBEAD5A11E6ED9CF0056D033 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveTV;
+			productName = LiveTV;
+			productReference = BB99FEDF1E6D95B1006BAA01 /* LiveTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB99FEF21E6D95B1006BAA01 /* LiveTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB99FF0A1E6D95B2006BAA01 /* Build configuration list for PBXNativeTarget "LiveTVTests" */;
+			buildPhases = (
+				BD5FE488432A84EC2ACD9114 /* [CP] Check Pods Manifest.lock */,
+				BB99FEEF1E6D95B1006BAA01 /* Sources */,
+				BB99FEF01E6D95B1006BAA01 /* Frameworks */,
+				BB99FEF11E6D95B1006BAA01 /* Resources */,
+				BB3DDEAA1E6DB51300E2CDB1 /* ShellScript */,
+				25877A65C28E2D3F3D2E1A5D /* [CP] Embed Pods Frameworks */,
+				1F26F4434B763ED64F8E777E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB99FEF51E6D95B1006BAA01 /* PBXTargetDependency */,
+			);
+			name = LiveTVTests;
+			productName = LiveTVTests;
+			productReference = BB99FEF31E6D95B1006BAA01 /* LiveTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB99FEFD1E6D95B2006BAA01 /* LiveTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB99FF0D1E6D95B2006BAA01 /* Build configuration list for PBXNativeTarget "LiveTVUITests" */;
+			buildPhases = (
+				67BAA3C7940C6A4CA619A580 /* [CP] Check Pods Manifest.lock */,
+				BB99FEFA1E6D95B2006BAA01 /* Sources */,
+				BB99FEFB1E6D95B2006BAA01 /* Frameworks */,
+				BB99FEFC1E6D95B2006BAA01 /* Resources */,
+				BB3DDEAB1E6DB52100E2CDB1 /* ShellScript */,
+				B7332452A885CF3B8D3DB8BB /* [CP] Embed Pods Frameworks */,
+				C48E43879FB23347B9D4BB53 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB99FF001E6D95B2006BAA01 /* PBXTargetDependency */,
+			);
+			name = LiveTVUITests;
+			productName = LiveTVUITests;
+			productReference = BB99FEFE1E6D95B2006BAA01 /* LiveTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB99FED71E6D95B1006BAA01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = AgileFreaks;
+				TargetAttributes = {
+					BB99FEDE1E6D95B1006BAA01 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z54TRUH95M;
+						ProvisioningStyle = Automatic;
+					};
+					BB99FEF21E6D95B1006BAA01 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z54TRUH95M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB99FEDE1E6D95B1006BAA01;
+					};
+					BB99FEFD1E6D95B2006BAA01 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z54TRUH95M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB99FEDE1E6D95B1006BAA01;
+					};
+				};
+			};
+			buildConfigurationList = BB99FEDA1E6D95B1006BAA01 /* Build configuration list for PBXProject "LiveTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB99FED61E6D95B1006BAA01;
+			productRefGroup = BB99FEE01E6D95B1006BAA01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB99FEDE1E6D95B1006BAA01 /* LiveTV */,
+				BB99FEF21E6D95B1006BAA01 /* LiveTVTests */,
+				BB99FEFD1E6D95B2006BAA01 /* LiveTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB99FEDD1E6D95B1006BAA01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB99FEED1E6D95B1006BAA01 /* LaunchScreen.storyboard in Resources */,
+				BB99FEEA1E6D95B1006BAA01 /* Assets.xcassets in Resources */,
+				BB5933531E6EE06B00149A92 /* ChannelCollectionViewCell.xib in Resources */,
+				BB99FEE81E6D95B1006BAA01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB99FEF11E6D95B1006BAA01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB99FEFC1E6D95B2006BAA01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F26F4434B763ED64F8E777E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveTVTests/Pods-LiveTVTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25877A65C28E2D3F3D2E1A5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveTVTests/Pods-LiveTVTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DFDDB6ADF5007E77B22B1EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		67BAA3C7940C6A4CA619A580 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B7332452A885CF3B8D3DB8BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveTVUITests/Pods-LiveTVUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB3DDEA91E6DB50300E2CDB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/swiftformat\" \"${SRCROOT}/LiveTV\"";
+		};
+		BB3DDEAA1E6DB51300E2CDB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/swiftformat\" \"${SRCROOT}/LiveTVTests\"";
+		};
+		BB3DDEAB1E6DB52100E2CDB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/swiftformat\" \"${SRCROOT}/LiveTVUITests\"";
+		};
+		BBEAD5A11E6ED9CF0056D033 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\nOUTPUT_FILE=\"$PROJECT_DIR/Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\nINPUT_DIR=\"$PROJECT_DIR\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n${PODS_ROOT}/Cuckoo/run generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"$INPUT_DIR/LiveTV/Scenes/LiveChannelsList/LiveChannelsService.swift\" \\";
+		};
+		BD5FE488432A84EC2ACD9114 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C25850EB7030719985C5B098 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveTV/Pods-LiveTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C48E43879FB23347B9D4BB53 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveTVUITests/Pods-LiveTVUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC5D55EC0614989DA06D206A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveTV/Pods-LiveTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB99FEDB1E6D95B1006BAA01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB3DDE9C1E6D9C2A00E2CDB1 /* LiveChannelsViewController.swift in Sources */,
+				BB3DDEA81E6DA4F400E2CDB1 /* LiveChannelsService.swift in Sources */,
+				BB5933581E6EE2D300149A92 /* LiveChannelViewModel.swift in Sources */,
+				BB5933561E6EE2B200149A92 /* LiveChannel.swift in Sources */,
+				BB3DDE971E6D9C2A00E2CDB1 /* LiveChannelsConfigurator.swift in Sources */,
+				BB3DDE9A1E6D9C2A00E2CDB1 /* LiveChannelsPresenter.swift in Sources */,
+				BB5933521E6EE06B00149A92 /* ChannelCollectionViewCell.swift in Sources */,
+				BB3DDE9B1E6D9C2A00E2CDB1 /* LiveChannelsRouter.swift in Sources */,
+				BB3DDE981E6D9C2A00E2CDB1 /* LiveChannelsInteractor.swift in Sources */,
+				BB59335B1E6EE8FB00149A92 /* UIView+Helpers.swift in Sources */,
+				BB3DDE8F1E6D9BA800E2CDB1 /* AppDelegate.swift in Sources */,
+				BB3DDEAF1E6DB9FC00E2CDB1 /* Injectable.swift in Sources */,
+				BB3DDE991E6D9C2A00E2CDB1 /* LiveChannelsModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB99FEEF1E6D95B1006BAA01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB3DDEA21E6DA39800E2CDB1 /* LiveChannelsInteractorTests.swift in Sources */,
+				BB5933611E6EFC1600149A92 /* GeneratedMocks.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB99FEFA1E6D95B2006BAA01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB99FF031E6D95B2006BAA01 /* LiveChannelsViewControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB99FEF51E6D95B1006BAA01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB99FEDE1E6D95B1006BAA01 /* LiveTV */;
+			targetProxy = BB99FEF41E6D95B1006BAA01 /* PBXContainerItemProxy */;
+		};
+		BB99FF001E6D95B2006BAA01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB99FEDE1E6D95B1006BAA01 /* LiveTV */;
+			targetProxy = BB99FEFF1E6D95B2006BAA01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB99FEE61E6D95B1006BAA01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB99FEE71E6D95B1006BAA01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB99FEEB1E6D95B1006BAA01 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB99FEEC1E6D95B1006BAA01 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB99FF051E6D95B2006BAA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB99FF061E6D95B2006BAA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB99FF081E6D95B2006BAA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA59C3CA3375E79D415E9C70 /* Pods-LiveTV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z54TRUH95M;
+				INFOPLIST_FILE = LiveTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.LiveTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BB99FF091E6D95B2006BAA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 541490BF2478B02F1BDFD7A1 /* Pods-LiveTV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z54TRUH95M;
+				INFOPLIST_FILE = LiveTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.LiveTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BB99FF0B1E6D95B2006BAA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7BF1275F4E3EC6B64D1AD37 /* Pods-LiveTVTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z54TRUH95M;
+				INFOPLIST_FILE = LiveTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.LiveTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveTV.app/LiveTV";
+			};
+			name = Debug;
+		};
+		BB99FF0C1E6D95B2006BAA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A5FE5938DF008E0C0B5FF26 /* Pods-LiveTVTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z54TRUH95M;
+				INFOPLIST_FILE = LiveTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.LiveTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveTV.app/LiveTV";
+			};
+			name = Release;
+		};
+		BB99FF0E1E6D95B2006BAA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6FA917EAA5284E4BEAEFA2E /* Pods-LiveTVUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Z54TRUH95M;
+				INFOPLIST_FILE = LiveTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.LiveTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LiveTV;
+			};
+			name = Debug;
+		};
+		BB99FF0F1E6D95B2006BAA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27BC48748AF9CFE0588B752B /* Pods-LiveTVUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Z54TRUH95M;
+				INFOPLIST_FILE = LiveTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.LiveTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LiveTV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB99FEDA1E6D95B1006BAA01 /* Build configuration list for PBXProject "LiveTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB99FF051E6D95B2006BAA01 /* Debug */,
+				BB99FF061E6D95B2006BAA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB99FF071E6D95B2006BAA01 /* Build configuration list for PBXNativeTarget "LiveTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB99FF081E6D95B2006BAA01 /* Debug */,
+				BB99FF091E6D95B2006BAA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB99FF0A1E6D95B2006BAA01 /* Build configuration list for PBXNativeTarget "LiveTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB99FF0B1E6D95B2006BAA01 /* Debug */,
+				BB99FF0C1E6D95B2006BAA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB99FF0D1E6D95B2006BAA01 /* Build configuration list for PBXNativeTarget "LiveTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB99FF0E1E6D95B2006BAA01 /* Debug */,
+				BB99FF0F1E6D95B2006BAA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB99FED71E6D95B1006BAA01 /* Project object */;
+}

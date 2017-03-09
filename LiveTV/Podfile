@@ -1,0 +1,21 @@
+platform :ios, '9.0'
+
+target 'LiveTV' do
+  use_frameworks!
+
+  # Pods for LiveTV
+  
+
+  target 'LiveTVTests' do
+    inherit! :search_paths
+    
+    pod 'Cuckoo'
+    # Pods for testing
+  end
+
+  target 'LiveTVUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
