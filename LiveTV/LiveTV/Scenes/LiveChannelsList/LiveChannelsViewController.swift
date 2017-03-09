@@ -35,6 +35,8 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
 
     weak var delegate: LiveChannelsViewControllerExpandDelegate?
 
+    var videoCell: [Int: ChannelCollectionViewCell] = [:]
+
     // MARK: - Object lifecycle
 
     override func awakeFromNib() {
@@ -70,6 +72,8 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
 
     func displaySomething(viewModel: LiveChannels.Load.ViewModel) {
         self.viewModel = viewModel
+
+        self.videoCell.removeAll()
         self.collectionView?.reloadData()
 
         self.selectChannel(channel: self.viewModel.liveChannelsViewModels[0].liveChannel)
@@ -81,13 +85,21 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: channelCollectionCellId, for: indexPath) as! ChannelCollectionViewCell
-        let model = self.viewModel.liveChannelsViewModels[indexPath.row]
-        cell.configure(with: model)
+        var cell: ChannelCollectionViewCell
 
-        #if DEBUG
-            cell.accessibilityIdentifier = "channelCell_\(indexPath.row)"
-        #endif
+        if let currentCell = self.videoCell[indexPath.row] {
+            cell = currentCell
+        } else {
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: channelCollectionCellId, for: indexPath) as! ChannelCollectionViewCell
+            let model = self.viewModel.liveChannelsViewModels[indexPath.row]
+            cell.configure(with: model)
+
+            self.videoCell[indexPath.row] = cell
+
+            #if DEBUG
+                cell.accessibilityIdentifier = "channelCell_\(indexPath.row)"
+            #endif
+        }
 
         return cell
     }
