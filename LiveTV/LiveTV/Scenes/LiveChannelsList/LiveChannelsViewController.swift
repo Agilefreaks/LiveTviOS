@@ -36,6 +36,7 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
     weak var delegate: LiveChannelsViewControllerExpandDelegate?
 
     var videoCell: [Int: ChannelCollectionViewCell] = [:]
+    var selectedIndex: Int = 0
 
     // MARK: - Object lifecycle
 
@@ -101,19 +102,23 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
             #endif
         }
 
+        cell.setSelectedState(state: self.selectedIndex == indexPath.row)
+
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView,
                         layout _: UICollectionViewLayout,
                         sizeForItemAt _: IndexPath) -> CGSize {
-        let width = (collectionView.width - 30) / 2
+        let width = (collectionView.width - 50) / 2
         let size = CGSize(width: width, height: collectionView.height)
         return size
     }
 
     func collectionView(_: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.selectedIndex = indexPath.row
         let model = self.viewModel.liveChannelsViewModels[indexPath.row]
         self.selectChannel(channel: model.liveChannel)
+        self.collectionView?.reloadData()
     }
 }

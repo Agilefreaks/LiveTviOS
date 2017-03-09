@@ -16,8 +16,10 @@ class ChannelCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var logoImageView: UIImageView!
 
     @IBOutlet weak var avPlayerView: AVPlayerView!
+    @IBOutlet weak var selectedOverlay: UIView!
 
     func configure(with viewModel: LiveChannelViewModel) {
+
         self.titleLabel.text = viewModel.nameString
         self.imageView.image = UIImage(named: viewModel.imagePlaceholderName)
 
@@ -28,5 +30,9 @@ class ChannelCollectionViewCell: UICollectionViewCell {
         castedLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
         avPlayer.volume = 0
         avPlayer.play()
+    }
+
+    func setSelectedState(state: Bool) {
+        self.selectedOverlay.isHidden = !state
     }
 }

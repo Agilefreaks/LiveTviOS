@@ -365,6 +365,7 @@
 				FC5D55EC0614989DA06D206A /* [CP] Embed Pods Frameworks */,
 				C25850EB7030719985C5B098 /* [CP] Copy Pods Resources */,
 				BBEAD5A11E6ED9CF0056D033 /* ShellScript */,
+				BB7E188F1E717956006044F8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -612,6 +613,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/swiftformat\" \"${SRCROOT}/LiveTVUITests\"";
+		};
+		BB7E188F1E717956006044F8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ac4a2298a4170b150ba906a2a9f64342134a1612 2daaa8318ac89b90ffd4d8cd7e0a34b27a0fa9af1347dd73723b151ac6b1a140";
 		};
 		BBCBF7141E71496D00358F7E /* Generate Apollo GraphQL API */ = {
 			isa = PBXShellScriptBuildPhase;
