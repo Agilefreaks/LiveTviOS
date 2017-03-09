@@ -5,6 +5,8 @@ target 'LiveTV' do
 
   # Pods for LiveTV
   pod 'Apollo'
+  pod 'Crashlytics'
+  pod 'Fabric'
   
 
   target 'LiveTVTests' do

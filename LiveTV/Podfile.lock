@@ -1,15 +1,22 @@
 PODS:
   - Apollo (0.5.6)
+  - Crashlytics (3.8.4):
+    - Fabric (~> 1.6.3)
   - Cuckoo (0.8.3)
+  - Fabric (1.6.11)
 
 DEPENDENCIES:
   - Apollo
+  - Crashlytics
   - Cuckoo
+  - Fabric
 
 SPEC CHECKSUMS:
   Apollo: 124ddbbca48acca75fd5f9ec5045454cb410bb31
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
   Cuckoo: 2daf5d23383c0a24cd60b73287a5813af4793add
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
 
-PODFILE CHECKSUM: 5f7837d01b37510961995251260e91b4662d3bf7
+PODFILE CHECKSUM: 002ea3eeff2d47f78ef8f3311395e5c161978b63
 
 COCOAPODS: 1.2.0
