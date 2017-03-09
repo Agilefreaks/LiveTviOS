@@ -14,7 +14,7 @@ class ChannelCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var logoImageView: UIImageView!
 
     func configure(with viewModel: LiveChannelViewModel) {
-        self.titleLabel.text = viewModel.titleString
+        self.titleLabel.text = viewModel.nameString
         self.imageView.image = UIImage(named: viewModel.imagePlaceholderName)
     }
 }

@@ -7,20 +7,37 @@
 //
 
 import Foundation
+import Apollo
 
 protocol ListChannelsServiceProtocol {
     func getLiveChannelsList(success: @escaping ([LiveChannel]) -> Void, failure: @escaping (Error) -> Void)
 }
 
 class LiveChannelsService: ListChannelsServiceProtocol {
-    func getLiveChannelsList(success: @escaping ([LiveChannel]) -> Void, failure: @escaping (Error) -> Void) {
-        let epix = LiveChannel(name: "Epix", logoUrl: "test", streamingUrl: "test", title: "test epix")
-        let epix2 = LiveChannel(name: "Epix 2", logoUrl: "test", streamingUrl: "test", title: "test epix 2")
-        let epix3 = LiveChannel(name: "Epix 3", logoUrl: "test", streamingUrl: "test", title: "test epix 3")
-        let epix4 = LiveChannel(name: "Epix 4", logoUrl: "test", streamingUrl: "test", title: "test epix 4")
-        success([epix, epix2, epix3, epix4])
+    let apolloClient = ApolloClient(url: URL(string: "https://livetv-160809.appspot.com/graphql")!)
 
-        let errorTemp = NSError(domain: "", code: 300, userInfo: nil)
-        failure(errorTemp)
+    func getLiveChannelsList(success: @escaping ([LiveChannel]) -> Void, failure: @escaping (Error) -> Void) {
+
+        apolloClient.fetch(query: LiveChannelsQuery()) { result, error in
+
+            if let error = error { failure(error); return }
+            guard let result = result else {
+                let errorTemp = NSError(domain: "Query error", code: 400, userInfo: ["description": "No query result"])
+                failure(errorTemp)
+                return }
+
+            if let errors = result.errors {
+                let errorTemp = NSError(domain: "Query error", code: 400, userInfo: ["description": "Errors in query result: \(errors)"])
+                failure(errorTemp)
+            }
+
+            guard let data = result.data else {
+                let errorTemp = NSError(domain: "Query error", code: 400, userInfo: ["description": "No query result data"])
+                failure(errorTemp); return }
+
+            guard let dataChannels = data.liveChannels else { success([]); return }
+            let results = dataChannels.map({ LiveChannel(apiObject: $0) })
+            success(results)
+        }
     }
 }

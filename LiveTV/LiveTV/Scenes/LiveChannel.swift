@@ -7,14 +7,21 @@
 //
 
 import Foundation
+import Apollo
 
 struct LiveChannel: Equatable {
     let name: String
-    let logoUrl: String?
-    let streamingUrl: String?
-    let title: String?
+    var logoUrl: String?
+    var streamingUrl: String?
+    var title: String?
 
     static func ==(lhs: LiveChannel, rhs: LiveChannel) -> Bool {
         return lhs.name == rhs.name
+    }
+}
+
+extension LiveChannel {
+    init(apiObject: LiveChannelsQuery.Data.LiveChannel?) {
+        self.name = apiObject?.name ?? ""
     }
 }

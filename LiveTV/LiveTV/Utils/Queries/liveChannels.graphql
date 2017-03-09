@@ -1,5 +1,9 @@
 query LiveChannels {
     live_channels {
-        id, name
+        id, name, now_playing {
+            starts_at, content {
+                url
+            }
+        }
     }
 }
