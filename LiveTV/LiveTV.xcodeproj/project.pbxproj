@@ -41,6 +41,9 @@
 		BB59337E1E70305D00149A92 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5933771E70305D00149A92 /* HomeViewController.swift */; };
 		BB59337F1E70305D00149A92 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5933781E70305D00149A92 /* HomeWorker.swift */; };
 		BB5933811E7034AD00149A92 /* LiveChannelsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5933801E7034AD00149A92 /* LiveChannelsViewControllerTests.swift */; };
+		BB7B9F3C1E714C1300ACECCD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7B9F3A1E714C1300ACECCD /* API.swift */; };
+		BB7B9F3D1E714C1300ACECCD /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = BB7B9F3B1E714C1300ACECCD /* schema.json */; };
+		BB7B9F411E714D7500ACECCD /* liveChannels.graphql in Resources */ = {isa = PBXBuildFile; fileRef = BB7B9F401E714D7500ACECCD /* liveChannels.graphql */; };
 		BB99FEE81E6D95B1006BAA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEE61E6D95B1006BAA01 /* Main.storyboard */; };
 		BB99FEEA1E6D95B1006BAA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEE91E6D95B1006BAA01 /* Assets.xcassets */; };
 		BB99FEED1E6D95B1006BAA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEEB1E6D95B1006BAA01 /* LaunchScreen.storyboard */; };
@@ -102,6 +105,9 @@
 		BB5933771E70305D00149A92 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BB5933781E70305D00149A92 /* HomeWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
 		BB5933801E7034AD00149A92 /* LiveChannelsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChannelsViewControllerTests.swift; sourceTree = "<group>"; };
+		BB7B9F3A1E714C1300ACECCD /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = LiveTV/API.swift; sourceTree = SOURCE_ROOT; };
+		BB7B9F3B1E714C1300ACECCD /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schema.json; path = LiveTV/schema.json; sourceTree = SOURCE_ROOT; };
+		BB7B9F401E714D7500ACECCD /* liveChannels.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = liveChannels.graphql; sourceTree = "<group>"; };
 		BB99FEDF1E6D95B1006BAA01 /* LiveTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB99FEE71E6D95B1006BAA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB99FEE91E6D95B1006BAA01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -216,6 +222,9 @@
 		BB3DDEAC1E6DB9D200E2CDB1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				BB7B9F3F1E714D7500ACECCD /* Queries */,
+				BB7B9F3A1E714C1300ACECCD /* API.swift */,
+				BB7B9F3B1E714C1300ACECCD /* schema.json */,
 				BB5933591E6EE8FB00149A92 /* Extensions */,
 				BB3DDEAD1E6DB9D200E2CDB1 /* Protocols */,
 			);
@@ -273,6 +282,14 @@
 				BB5933781E70305D00149A92 /* HomeWorker.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		BB7B9F3F1E714D7500ACECCD /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				BB7B9F401E714D7500ACECCD /* liveChannels.graphql */,
+			);
+			path = Queries;
 			sourceTree = "<group>";
 		};
 		BB99FED61E6D95B1006BAA01 = {
@@ -337,6 +354,7 @@
 			buildConfigurationList = BB99FF071E6D95B2006BAA01 /* Build configuration list for PBXNativeTarget "LiveTV" */;
 			buildPhases = (
 				2DFDDB6ADF5007E77B22B1EB /* [CP] Check Pods Manifest.lock */,
+				BBCBF7141E71496D00358F7E /* Generate Apollo GraphQL API */,
 				BB99FEDB1E6D95B1006BAA01 /* Sources */,
 				BB99FEDC1E6D95B1006BAA01 /* Frameworks */,
 				BB99FEDD1E6D95B1006BAA01 /* Resources */,
@@ -453,9 +471,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB99FEED1E6D95B1006BAA01 /* LaunchScreen.storyboard in Resources */,
+				BB7B9F3D1E714C1300ACECCD /* schema.json in Resources */,
 				BB99FEEA1E6D95B1006BAA01 /* Assets.xcassets in Resources */,
 				BB5933531E6EE06B00149A92 /* ChannelCollectionViewCell.xib in Resources */,
 				BB99FEE81E6D95B1006BAA01 /* Main.storyboard in Resources */,
+				BB7B9F411E714D7500ACECCD /* liveChannels.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +610,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/swiftformat\" \"${SRCROOT}/LiveTVUITests\"";
 		};
+		BBCBF7141E71496D00358F7E /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-codegen.sh generate $(find . -name '*.graphql') --schema schema.json --output API.swift";
+		};
 		BBEAD5A11E6ED9CF0056D033 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -676,6 +710,7 @@
 				BB5933581E6EE2D300149A92 /* LiveChannelViewModel.swift in Sources */,
 				BB5933561E6EE2B200149A92 /* LiveChannel.swift in Sources */,
 				BB59337B1E70305D00149A92 /* HomeModels.swift in Sources */,
+				BB7B9F3C1E714C1300ACECCD /* API.swift in Sources */,
 				BB3DDE971E6D9C2A00E2CDB1 /* LiveChannelsConfigurator.swift in Sources */,
 				BB59336D1E702FD900149A92 /* HeroChannelPresenter.swift in Sources */,
 				BB3DDE9A1E6D9C2A00E2CDB1 /* LiveChannelsPresenter.swift in Sources */,

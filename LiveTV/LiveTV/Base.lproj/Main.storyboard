@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E163f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="r3L-m7-91B">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s84-Ru-944">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="324"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="324"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="324" id="x95-x7-FdN"/>
                                 </constraints>
@@ -31,7 +31,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYa-iX-5aj">
-                                <rect key="frame" x="0.0" y="324" width="320" height="174"/>
+                                <rect key="frame" x="0.0" y="324" width="375" height="174"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="174" id="fg0-xF-mYy"/>
                                 </constraints>
@@ -69,15 +69,15 @@
                         <viewControllerLayoutGuide type="bottom" id="o6u-oO-ZcZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NBq-6f-Zrt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="324"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="324"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IKm-uX-wMe">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="249"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
                                 <color key="backgroundColor" red="0.96078431610000004" green="0.70588237050000002" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htr-BL-fuc">
-                                <rect key="frame" x="27" y="257" width="277" height="21"/>
+                                <rect key="frame" x="27" y="257" width="332" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Vpc-b0-U5r"/>
                                 </constraints>
@@ -86,7 +86,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teenage Mutant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeI-2A-zsy">
-                                <rect key="frame" x="27" y="286" width="277" height="30"/>
+                                <rect key="frame" x="27" y="286" width="332" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="qER-2a-TUy"/>
                                 </constraints>
@@ -141,11 +141,11 @@
                         <viewControllerLayoutGuide type="bottom" id="fAm-gm-EOJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Jlh-2O-IUG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="174"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="o6I-JO-l86">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="174"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
                                 <color key="backgroundColor" red="0.25488662719999999" green="0.2549125552" blue="0.25486493110000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="2" id="vmF-re-4qq">
                                     <size key="itemSize" width="200" height="170"/>

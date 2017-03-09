@@ -1,0 +1,5 @@
+query LiveChannels {
+    live_channels {
+        id, name
+    }
+}

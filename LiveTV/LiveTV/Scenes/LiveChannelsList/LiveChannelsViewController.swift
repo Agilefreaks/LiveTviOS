@@ -61,7 +61,7 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
         let request = LiveChannels.Load.Request()
         output.perform(request: request)
     }
-    
+
     func selectChannel(channel: LiveChannel) {
         self.delegate?.expandChannel(channel: channel)
     }

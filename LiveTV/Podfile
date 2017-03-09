@@ -4,6 +4,7 @@ target 'LiveTV' do
   use_frameworks!
 
   # Pods for LiveTV
+  pod 'Apollo'
   
 
   target 'LiveTVTests' do
@@ -14,6 +15,7 @@ target 'LiveTV' do
   end
 
   target 'LiveTVUITests' do
+      
     inherit! :search_paths
     # Pods for testing
   end
