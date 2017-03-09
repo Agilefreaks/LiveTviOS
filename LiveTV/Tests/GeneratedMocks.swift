@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: LiveTV/Scenes/LiveChannelsList/LiveChannelsService.swift at 2017-03-09 09:26:33 +0000
+// MARK: - Mocks generated from file: LiveTV/Scenes/LiveChannelsList/LiveChannelsService.swift at 2017-03-09 10:06:58 +0000
 
 //
 //  LiveChannelsService.swift
@@ -126,7 +126,7 @@ class LiveChannelsServiceStub: LiveChannelsService {
     }
 }
 
-// MARK: - Mocks generated from file: LiveTV/Scenes/LiveChannelsList/LiveChannelsRouter.swift at 2017-03-09 09:26:33 +0000
+// MARK: - Mocks generated from file: LiveTV/Scenes/LiveChannelsList/LiveChannelsRouter.swift at 2017-03-09 10:06:58 +0000
 
 //
 //  LiveChannelsRouter.swift

@@ -23,5 +23,6 @@ struct LiveChannel: Equatable {
 extension LiveChannel {
     init(apiObject: LiveChannelsQuery.Data.LiveChannel?) {
         self.name = apiObject?.name ?? ""
+        self.streamingUrl = apiObject?.nowPlaying?.content?.url
     }
 }

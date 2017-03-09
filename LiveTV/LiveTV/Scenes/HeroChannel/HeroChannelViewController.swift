@@ -10,6 +10,8 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 protocol HeroChannelViewControllerInput {
     func displaySomething(viewModel: HeroChannel.Something.ViewModel)
@@ -27,6 +29,11 @@ class HeroChannelViewController: UIViewController, HeroChannelViewControllerInpu
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nextOnLabel: UILabel!
     @IBOutlet weak var liveIndicatorLabel: UILabel!
+
+    @IBOutlet weak var avPlayerView: AVPlayerView!
+
+    var videoPlayer: AVPlayer?
+    var videoPlayerLayer: AVPlayerLayer?
 
     // MARK: - Object lifecycle
 
@@ -50,6 +57,13 @@ class HeroChannelViewController: UIViewController, HeroChannelViewControllerInpu
     // MARK: - Display logic
 
     func displaySomething(viewModel: HeroChannel.Something.ViewModel) {
-        self.titleLabel.text = viewModel.liveChannelviewModel.titleString
+        self.titleLabel.text = viewModel.liveChannelviewModel.nameString
+
+        let videoURL = URL(string: viewModel.liveChannelviewModel.streamingURLString)
+        let avPlayer = AVPlayer(url: videoURL!)
+        let castedLayer = avPlayerView.layer as! AVPlayerLayer
+        castedLayer.player = avPlayer
+        castedLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        avPlayer.play()
     }
 }
