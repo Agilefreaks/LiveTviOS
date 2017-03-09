@@ -35,7 +35,7 @@
                             <constraint firstAttribute="width" constant="43" id="X19-Il-usx"/>
                         </constraints>
                     </imageView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLT-a4-T5M">
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLT-a4-T5M">
                         <rect key="frame" x="0.0" y="0.0" width="144" height="122"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eB-ZR-PMA">

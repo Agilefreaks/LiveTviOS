@@ -35,7 +35,7 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
 
     weak var delegate: LiveChannelsViewControllerExpandDelegate?
 
-    var videoCell: [Int: ChannelCollectionViewCell] = [:]
+    var videoCells: [Int: ChannelCollectionViewCell] = [:]
     var selectedIndex: Int = 0
 
     // MARK: - Object lifecycle
@@ -65,19 +65,34 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
         output.perform(request: request)
     }
 
-    func selectChannel(channel: LiveChannel) {
-        self.delegate?.expandChannel(channel: channel)
+    func selectChannel(at index: Int) {
+        let model = self.viewModel.liveChannelsViewModels[index]
+        self.delegate?.expandChannel(channel: model.liveChannel)
+        self.markSelectedChannel(at: index)
+    }
+
+    func markSelectedChannel(at index: Int) {
+        let oldSelectedCell = self.videoCells[self.selectedIndex]
+        oldSelectedCell?.setSelectedState(state: false)
+
+        let newSelectedCell = self.videoCells[index]
+        newSelectedCell?.setSelectedState(state: true)
+
+        self.selectedIndex = index
     }
 
     // MARK: - Display logic
 
     func displaySomething(viewModel: LiveChannels.Load.ViewModel) {
         self.viewModel = viewModel
+        self.videoCells.removeAll()
 
-        self.videoCell.removeAll()
-        self.collectionView?.reloadData()
-
-        self.selectChannel(channel: self.viewModel.liveChannelsViewModels[0].liveChannel)
+        UIView.animate(withDuration: 0.0, animations: { [weak self] in
+            guard let strongSelf = self else { return }
+            strongSelf.collectionView?.reloadData()
+        }, completion: { [weak self] _ in
+            self?.selectChannel(at: 0)
+        })
     }
 
     // MARK: - Collection view data source
@@ -85,24 +100,25 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
         return self.viewModel.liveChannelsViewModels.count
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell: ChannelCollectionViewCell
+    func collectionView(_: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return self.loadCell(for: indexPath)
+    }
 
-        if let currentCell = self.videoCell[indexPath.row] {
-            cell = currentCell
-        } else {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: channelCollectionCellId, for: indexPath) as! ChannelCollectionViewCell
-            let model = self.viewModel.liveChannelsViewModels[indexPath.row]
-            cell.configure(with: model)
-
-            self.videoCell[indexPath.row] = cell
-
-            #if DEBUG
-                cell.accessibilityIdentifier = "channelCell_\(indexPath.row)"
-            #endif
+    func loadCell(for indexPath: IndexPath) -> ChannelCollectionViewCell {
+        if let cell = self.videoCells[indexPath.row] {
+            return cell
         }
 
-        cell.setSelectedState(state: self.selectedIndex == indexPath.row)
+        let newCell = self.createCell(for: indexPath)
+        self.videoCells[indexPath.row] = newCell
+
+        return newCell
+    }
+
+    func createCell(for indexPath: IndexPath) -> ChannelCollectionViewCell {
+        let cell = self.collectionView?.dequeueReusableCell(withReuseIdentifier: channelCollectionCellId, for: indexPath) as! ChannelCollectionViewCell
+        let model = self.viewModel.liveChannelsViewModels[indexPath.row]
+        cell.configure(with: model)
 
         return cell
     }
@@ -116,9 +132,6 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
     }
 
     func collectionView(_: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.selectedIndex = indexPath.row
-        let model = self.viewModel.liveChannelsViewModels[indexPath.row]
-        self.selectChannel(channel: model.liveChannel)
-        self.collectionView?.reloadData()
+        self.selectChannel(at: indexPath.row)
     }
 }
