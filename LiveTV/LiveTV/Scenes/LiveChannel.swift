@@ -8,9 +8,13 @@
 
 import Foundation
 
-struct LiveChannel {
+struct LiveChannel: Equatable {
     let name: String
     let logoUrl: String?
     let streamingUrl: String?
     let title: String?
+
+    static func ==(lhs: LiveChannel, rhs: LiveChannel) -> Bool {
+        return lhs.name == rhs.name
+    }
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 class LiveChannelViewModel {
-    private let liveChannel: LiveChannel
+    let liveChannel: LiveChannel
 
     // MARK: - Initialization
     init(liveChannel input: LiveChannel) {

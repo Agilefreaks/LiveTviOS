@@ -23,7 +23,6 @@ class LiveChannelsInteractor: LiveChannelsInteractorInput, Injectable {
     var output: LiveChannelsInteractorOutput!
 
     typealias T = ListChannelsServiceProtocol
-
     var entityService: ListChannelsServiceProtocol!
 
     // MARK: - Business logic

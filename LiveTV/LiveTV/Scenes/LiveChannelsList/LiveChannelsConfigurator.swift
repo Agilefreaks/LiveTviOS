@@ -14,9 +14,6 @@ import UIKit
 // MARK: - Connect View, Interactor, and Presenter
 
 extension LiveChannelsViewController: LiveChannelsPresenterOutput {
-    override func prepare(for segue: UIStoryboardSegue, sender _: Any?) {
-        router.passDataToNextScene(segue: segue)
-    }
 }
 
 extension LiveChannelsInteractor: LiveChannelsViewControllerOutput {

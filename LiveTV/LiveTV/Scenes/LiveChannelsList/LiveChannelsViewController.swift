@@ -19,14 +19,22 @@ protocol LiveChannelsViewControllerOutput {
     func perform(request: LiveChannels.Load.Request)
 }
 
+protocol LiveChannelsViewControllerExpandDelegate: NSObjectProtocol {
+    func expandChannel(channel: LiveChannel)
+}
+
 let channelCollectionCellId = "channelCollectionCellIdentifier"
 
 class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerInput, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     var output: LiveChannelsViewControllerOutput!
-    var router: LiveChannelsRouter!
+    var router: LiveChannelsRouterInput!
+
+    @IBOutlet weak var collectionView: UICollectionView?
 
     var viewModel: LiveChannels.Load.ViewModel = LiveChannels.Load.ViewModel(liveChannelsViewModels: [])
-    @IBOutlet weak var collectionView: UICollectionView!
+
+    weak var delegate: LiveChannelsViewControllerExpandDelegate?
+
     // MARK: - Object lifecycle
 
     override func awakeFromNib() {
@@ -44,7 +52,7 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
     }
 
     func collectionViewSetup() {
-        self.collectionView.register(UINib(nibName: "ChannelCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: channelCollectionCellId)
+        self.collectionView?.register(UINib(nibName: "ChannelCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: channelCollectionCellId)
     }
 
     // MARK: - Event handling
@@ -53,12 +61,18 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
         let request = LiveChannels.Load.Request()
         output.perform(request: request)
     }
+    
+    func selectChannel(channel: LiveChannel) {
+        self.delegate?.expandChannel(channel: channel)
+    }
 
     // MARK: - Display logic
 
     func displaySomething(viewModel: LiveChannels.Load.ViewModel) {
         self.viewModel = viewModel
-        self.collectionView.reloadData()
+        self.collectionView?.reloadData()
+
+        self.selectChannel(channel: self.viewModel.liveChannelsViewModels[0].liveChannel)
     }
 
     // MARK: - Collection view data source
@@ -84,5 +98,10 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
         let width = (collectionView.width - 30) / 2
         let size = CGSize(width: width, height: collectionView.height)
         return size
+    }
+
+    func collectionView(_: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let model = self.viewModel.liveChannelsViewModels[indexPath.row]
+        self.selectChannel(channel: model.liveChannel)
     }
 }
