@@ -433,7 +433,7 @@
 					BB99FEDE1E6D95B1006BAA01 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Z54TRUH95M;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					BB99FEF21E6D95B1006BAA01 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -907,6 +907,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.LiveTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8608d4e1-f3d7-4083-880f-118c369eafb5";
+				PROVISIONING_PROFILE_SPECIFIER = "Live TV dev";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -921,6 +923,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.LiveTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8608d4e1-f3d7-4083-880f-118c369eafb5";
+				PROVISIONING_PROFILE_SPECIFIER = "Live TV dev";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
