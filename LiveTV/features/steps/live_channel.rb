@@ -17,3 +17,8 @@ Then(/^hero is playing same channel$/) do
     expect(valueCell).to eq valueHero
 end
 
+Then(/^selected indicator is displayed$/) do
+    selectedOverlayVisibility = element_exists("* marked:'channelSelectedOverlay_1'")
+    
+    expect(selectedOverlayVisibility).to eq true
+end

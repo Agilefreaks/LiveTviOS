@@ -122,6 +122,7 @@ class LiveChannelsViewController: UIViewController, LiveChannelsViewControllerIn
 
         cell.accessibilityIdentifier = "channelCell_\(indexPath.row)"
         cell.accessibilityValue = "Playing \(model.nameString)"
+        cell.selectedOverlay.accessibilityIdentifier = "channelSelectedOverlay_\(indexPath.row)"
 
         return cell
     }
