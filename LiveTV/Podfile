@@ -1,25 +1,23 @@
 platform :ios, '9.0'
 
 target 'LiveTV' do
-  use_frameworks!
-
-  # Pods for LiveTV
-  pod 'Apollo'
-  pod 'Crashlytics'
-  pod 'Fabric'
-  
-
-  target 'LiveTVTests' do
-    inherit! :search_paths
+    use_frameworks!
     
-    pod 'Cuckoo'
-    # Pods for testing
-  end
-
-  target 'LiveTVUITests' do
-      
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+    # Pods for LiveTV
+    pod 'Apollo'
+    pod 'Crashlytics'
+    pod 'Fabric'
+    
+    target 'LiveTVTests' do
+        inherit! :search_paths
+        
+        pod 'Cuckoo'
+        # Pods for testing
+    end
+    
+    target 'LiveTVUITests' do
+        
+        inherit! :search_paths
+        # Pods for testing
+    end
 end

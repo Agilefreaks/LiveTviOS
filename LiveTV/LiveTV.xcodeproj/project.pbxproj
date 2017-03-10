@@ -45,6 +45,12 @@
 		BB7B9F3D1E714C1300ACECCD /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = BB7B9F3B1E714C1300ACECCD /* schema.json */; };
 		BB7B9F411E714D7500ACECCD /* liveChannels.graphql in Resources */ = {isa = PBXBuildFile; fileRef = BB7B9F401E714D7500ACECCD /* liveChannels.graphql */; };
 		BB7E188E1E716054006044F8 /* AVPlayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7E188D1E716054006044F8 /* AVPlayer+Extensions.swift */; };
+		BB7E18A91E72B37C006044F8 /* live_channel.feature in Resources */ = {isa = PBXBuildFile; fileRef = BB7E18A01E72B37C006044F8 /* live_channel.feature */; };
+		BB7E18AA1E72B37C006044F8 /* live_channel.rb in Resources */ = {isa = PBXBuildFile; fileRef = BB7E18A21E72B37C006044F8 /* live_channel.rb */; };
+		BB7E18AB1E72B37C006044F8 /* 01_launch.rb in Resources */ = {isa = PBXBuildFile; fileRef = BB7E18A41E72B37C006044F8 /* 01_launch.rb */; };
+		BB7E18AC1E72B37C006044F8 /* dry_run.rb in Resources */ = {isa = PBXBuildFile; fileRef = BB7E18A51E72B37C006044F8 /* dry_run.rb */; };
+		BB7E18AD1E72B37C006044F8 /* env.rb in Resources */ = {isa = PBXBuildFile; fileRef = BB7E18A61E72B37C006044F8 /* env.rb */; };
+		BB7E18AE1E72B37C006044F8 /* cucumber.rb in Resources */ = {isa = PBXBuildFile; fileRef = BB7E18A81E72B37C006044F8 /* cucumber.rb */; };
 		BB99FEE81E6D95B1006BAA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEE61E6D95B1006BAA01 /* Main.storyboard */; };
 		BB99FEEA1E6D95B1006BAA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEE91E6D95B1006BAA01 /* Assets.xcassets */; };
 		BB99FEED1E6D95B1006BAA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB99FEEB1E6D95B1006BAA01 /* LaunchScreen.storyboard */; };
@@ -70,9 +76,12 @@
 
 /* Begin PBXFileReference section */
 		27BC48748AF9CFE0588B752B /* Pods-LiveTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTVUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveTVUITests/Pods-LiveTVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2D2928E20E19384026ADBE6B /* Pods-LiveTVCalabashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTVCalabashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveTVCalabashTests/Pods-LiveTVCalabashTests.release.xcconfig"; sourceTree = "<group>"; };
 		541490BF2478B02F1BDFD7A1 /* Pods-LiveTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveTV/Pods-LiveTV.release.xcconfig"; sourceTree = "<group>"; };
 		5695DDFF56F45BBE7DEFE5FA /* Pods_LiveTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5FE5938DF008E0C0B5FF26 /* Pods-LiveTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveTVTests/Pods-LiveTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		6EE9B37569ADBC26D77659BF /* Pods-LiveTVCalabashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTVCalabashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveTVCalabashTests/Pods-LiveTVCalabashTests.debug.xcconfig"; sourceTree = "<group>"; };
+		860A67371DA56FDE2FF1941A /* Pods_LiveTVCalabashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveTVCalabashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BF1275F4E3EC6B64D1AD37 /* Pods-LiveTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveTVTests/Pods-LiveTVTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6FA917EAA5284E4BEAEFA2E /* Pods-LiveTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTVUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveTVUITests/Pods-LiveTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB3DDE8E1E6D9BA800E2CDB1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +119,12 @@
 		BB7B9F3B1E714C1300ACECCD /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schema.json; path = LiveTV/schema.json; sourceTree = SOURCE_ROOT; };
 		BB7B9F401E714D7500ACECCD /* liveChannels.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = liveChannels.graphql; sourceTree = "<group>"; };
 		BB7E188D1E716054006044F8 /* AVPlayer+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Extensions.swift"; sourceTree = "<group>"; };
+		BB7E18A01E72B37C006044F8 /* live_channel.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = live_channel.feature; sourceTree = "<group>"; };
+		BB7E18A21E72B37C006044F8 /* live_channel.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = live_channel.rb; sourceTree = "<group>"; };
+		BB7E18A41E72B37C006044F8 /* 01_launch.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = 01_launch.rb; sourceTree = "<group>"; };
+		BB7E18A51E72B37C006044F8 /* dry_run.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = dry_run.rb; sourceTree = "<group>"; };
+		BB7E18A61E72B37C006044F8 /* env.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = env.rb; sourceTree = "<group>"; };
+		BB7E18A81E72B37C006044F8 /* cucumber.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = cucumber.rb; sourceTree = "<group>"; };
 		BB99FEDF1E6D95B1006BAA01 /* LiveTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB99FEE71E6D95B1006BAA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB99FEE91E6D95B1006BAA01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,6 +177,8 @@
 				6A5FE5938DF008E0C0B5FF26 /* Pods-LiveTVTests.release.xcconfig */,
 				B6FA917EAA5284E4BEAEFA2E /* Pods-LiveTVUITests.debug.xcconfig */,
 				27BC48748AF9CFE0588B752B /* Pods-LiveTVUITests.release.xcconfig */,
+				6EE9B37569ADBC26D77659BF /* Pods-LiveTVCalabashTests.debug.xcconfig */,
+				2D2928E20E19384026ADBE6B /* Pods-LiveTVCalabashTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -172,6 +189,7 @@
 				E582ECB0A2114ACD91AEC209 /* Pods_LiveTV.framework */,
 				5695DDFF56F45BBE7DEFE5FA /* Pods_LiveTVTests.framework */,
 				CE8C66C6D7B748358C59FDAE /* Pods_LiveTVUITests.framework */,
+				860A67371DA56FDE2FF1941A /* Pods_LiveTVCalabashTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -295,6 +313,51 @@
 			path = Queries;
 			sourceTree = "<group>";
 		};
+		BB7E189E1E72B36F006044F8 /* Calabash */ = {
+			isa = PBXGroup;
+			children = (
+				BB7E189F1E72B37C006044F8 /* features */,
+			);
+			name = Calabash;
+			sourceTree = "<group>";
+		};
+		BB7E189F1E72B37C006044F8 /* features */ = {
+			isa = PBXGroup;
+			children = (
+				BB7E18A01E72B37C006044F8 /* live_channel.feature */,
+				BB7E18A11E72B37C006044F8 /* steps */,
+				BB7E18A31E72B37C006044F8 /* support */,
+			);
+			path = features;
+			sourceTree = SOURCE_ROOT;
+		};
+		BB7E18A11E72B37C006044F8 /* steps */ = {
+			isa = PBXGroup;
+			children = (
+				BB7E18A21E72B37C006044F8 /* live_channel.rb */,
+			);
+			path = steps;
+			sourceTree = "<group>";
+		};
+		BB7E18A31E72B37C006044F8 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				BB7E18A41E72B37C006044F8 /* 01_launch.rb */,
+				BB7E18A51E72B37C006044F8 /* dry_run.rb */,
+				BB7E18A61E72B37C006044F8 /* env.rb */,
+				BB7E18A71E72B37C006044F8 /* patches */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		BB7E18A71E72B37C006044F8 /* patches */ = {
+			isa = PBXGroup;
+			children = (
+				BB7E18A81E72B37C006044F8 /* cucumber.rb */,
+			);
+			path = patches;
+			sourceTree = "<group>";
+		};
 		BB99FED61E6D95B1006BAA01 = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +406,7 @@
 		BB99FF011E6D95B2006BAA01 /* LiveTVUITests */ = {
 			isa = PBXGroup;
 			children = (
+				BB7E189E1E72B36F006044F8 /* Calabash */,
 				BB99FF021E6D95B2006BAA01 /* LiveChannelsViewControllerUITests.swift */,
 				BB99FF041E6D95B2006BAA01 /* Info.plist */,
 			);
@@ -494,6 +558,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7E18AD1E72B37C006044F8 /* env.rb in Resources */,
+				BB7E18AB1E72B37C006044F8 /* 01_launch.rb in Resources */,
+				BB7E18A91E72B37C006044F8 /* live_channel.feature in Resources */,
+				BB7E18AE1E72B37C006044F8 /* cucumber.rb in Resources */,
+				BB7E18AA1E72B37C006044F8 /* live_channel.rb in Resources */,
+				BB7E18AC1E72B37C006044F8 /* dry_run.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -905,6 +975,28 @@
 				DEVELOPMENT_TEAM = Z54TRUH95M;
 				INFOPLIST_FILE = LiveTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Apollo\"",
+					"-framework",
+					"\"Crashlytics\"",
+					"-framework",
+					"\"Fabric\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.LiveTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8608d4e1-f3d7-4083-880f-118c369eafb5";
@@ -921,6 +1013,28 @@
 				DEVELOPMENT_TEAM = Z54TRUH95M;
 				INFOPLIST_FILE = LiveTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Apollo\"",
+					"-framework",
+					"\"Crashlytics\"",
+					"-framework",
+					"\"Fabric\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.LiveTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8608d4e1-f3d7-4083-880f-118c369eafb5";
