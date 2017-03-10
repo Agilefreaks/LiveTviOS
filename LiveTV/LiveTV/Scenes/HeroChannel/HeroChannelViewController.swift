@@ -65,5 +65,8 @@ class HeroChannelViewController: UIViewController, HeroChannelViewControllerInpu
         castedLayer.player = avPlayer
         castedLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
         avPlayer.play()
+
+        avPlayerView.accessibilityIdentifier = "heroChannelPlayerIdentifier"
+        avPlayerView.accessibilityValue = "Playing \(viewModel.liveChannelviewModel.nameString)"
     }
 }

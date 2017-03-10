@@ -51,3 +51,21 @@ class LiveChannelsViewControllerUITests: XCTestCase {
         XCTAssert(firstCell.exists)
     }
 }
+
+extension LiveChannelsViewControllerUITests {
+    // LC-5 acceptance UI tests
+
+    func testExpandChannelOnTapStartsHero() {
+        let collectionView = XCUIApplication().collectionViews["channelsCollectionView"]
+        let secondCell = collectionView.cells["channelCell_1"]
+        let cellChannelName = secondCell.value as! String
+        secondCell.tap()
+
+        sleep(3)
+
+        let videoPlayer = XCUIApplication().otherElements["heroChannelPlayerIdentifier"]
+        let videoPlayerChannelName = videoPlayer.value as! String
+
+        XCTAssert(cellChannelName == videoPlayerChannelName, "Live channels after tap doesn't match")
+    }
+}
